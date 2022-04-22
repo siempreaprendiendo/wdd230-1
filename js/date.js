@@ -1,2 +1,4 @@
 let oLastModif = new Date(document.lastModified);
-document.getElementById("output").innerHTML = `Last Modified: ${oLastModif}`;
+document.getElementById("dateMod").innerHTML = `Last Modified: ${oLastModif}`;
+let year = d.getFullYear()
+document.getElementById("year").innerHTML - `${year}`
