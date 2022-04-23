@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    Padding: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -12,7 +12,6 @@ header, main, footer {
     max-width: 700px;
     margin: 0 auto;
     padding: 1.5rem;
-    justify-content: center;
 }
 
 main {
@@ -20,7 +19,7 @@ main {
     padding: 0 5rem;
 }
 
-header {
+header, footer {
     margin: 1rem auto;
     border: 1px solid black;
     padding: 1.5rem;
@@ -28,27 +27,24 @@ header {
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
+    text-align: center;
     border-radius: 5px 5px 5px 5px;
+    color: white;
+    box-shadow: 5px 5px 5px #999;
+}
+footer {
+    grid-template-columns: 1fr;
 }
 header img {
     width: 75%;
     height: auto;
     border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px  #999
 }
 
 h1 {
     align-items: center;
     font-size: 45px;
     padding: 1.5rem;
-    color: #D4C9E3;
-}
-footer {
-    margin: 1rem auto;
-    border: 1px solid black;
-    padding: 1.5rem;
-    background-color: #6654A0;
-    align-items: center;
-    text-align: center;
-    border-radius: 5px 5px 5px 5px;
     color: #D4C9E3;
 }
