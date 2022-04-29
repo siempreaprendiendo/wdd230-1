@@ -6,7 +6,7 @@
 
 
 header, main, footer {
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1.5rem;
     
@@ -46,6 +46,7 @@ section h1 {
     font-size: 1.5em;
     font-family: 'Eczar', serif;
     letter-spacing: 0.05rem;
+    text-align: center;
 }
 
 p {
@@ -57,5 +58,6 @@ img {
     max-width: 100%;
     height: auto;
     padding-top: 0.5rem;
+    border: 1px solid black;
 }
 
