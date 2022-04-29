@@ -23,12 +23,12 @@ header, footer {
     margin: 1rem auto;
     border: 1px solid black;
     padding: 1.5rem;
-    background-color: #6654A0;
+    background-color: indigo;
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
     text-align: center;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     color: white;
     box-shadow: 5px 5px 5px #999;
 }
@@ -36,15 +36,17 @@ footer {
     grid-template-columns: 1fr;
 }
 header img {
-    width: 75%;
+    width: 200px;
     height: auto;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 5px 5px 5px  #999
 }
 
 h1 {
     align-items: center;
-    font-size: 45px;
+    font-size: 1.5rem;
     padding: 1.5rem;
     color: #D4C9E3;
+}
+
+h2 {
+    font-size: 0.5rem;
 }
