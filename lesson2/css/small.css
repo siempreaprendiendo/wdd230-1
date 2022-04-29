@@ -47,12 +47,16 @@ section h1 {
     font-family: 'Eczar', serif;
     letter-spacing: 0.05rem;
     text-align: center;
+    align-self: start;
 }
 
-p {
-    padding: 0.25rem;
-    font-size: 1rem;
+section h2 {
+    font-size: 1em;
+    padding: 0.25em;
+    border-bottom: 2rem;
 }
+
+
 
 img {
     max-width: 100%;

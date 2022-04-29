@@ -9,5 +9,8 @@
     section h1 {
         font-size: 1.25rem;
     }
+    section:nth-child(3) {
+        grid-column: span 1;
+    }
     
 }
