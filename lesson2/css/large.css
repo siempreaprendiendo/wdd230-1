@@ -3,8 +3,6 @@
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 1.5rem;
-        width: 100%;
     }
     section h1 {
         font-size: 1.25rem;

@@ -14,13 +14,9 @@ header, main, footer {
 
 
 header, footer {
-    margin: 1rem auto;
+
     border: 1px solid black;
-    padding: 1.5rem;
     background-color: indigo;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
     text-align: center;
     color: white;
 }
@@ -29,8 +25,6 @@ section {
     border: 1px solid black;
     padding: 0 1.5rem 1.5rem 1.5rem;
     background-color: rgb(234, 217, 246);
-    display: grid;
-    grid-template-columns: 1fr;
     align-items: center;
     text-align: left;
     border-radius: 5px;
