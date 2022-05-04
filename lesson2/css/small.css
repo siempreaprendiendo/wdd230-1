@@ -26,7 +26,6 @@ section {
     padding: 0 1.5rem 1.5rem 1.5rem;
     background-color: rgb(234, 217, 246);
     align-items: center;
-    text-align: left;
     border-radius: 5px;
 }
 
@@ -55,7 +54,6 @@ section h2 {
 img {
     max-width: 100%;
     height: auto;
-    padding-top: 0.5rem;
     border: 1px solid black;
 }
 
