@@ -1,0 +1,40 @@
+/* 64em is also 1028px when baefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    nav ul li a {
+        padding: .5rem 1rem;
+        
+    }header img {
+        width: 100%;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        gap: 0em;
+      }
+
+      #event {
+        grid-area: 1/1/2/2;
+     }
+
+      #siteName {
+        grid-area: 1/2/3/4;
+      }
+      #newRelease {
+        grid-area: 3/2/4/4;
+      }
+      #spotlights {
+          grid-area: 1/4/4/5;
+      }
+      #weather {
+        grid-area: 2/1/3/2;
+     }
+      #join {
+        grid-area: 3/1/4/2;
+      } 
+      
+      
+}
+
+ /* end large */
