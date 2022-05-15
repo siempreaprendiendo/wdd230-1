@@ -1,0 +1,177 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  /*--primary-color: #2f2259;
+  --secondary-color: #990aff;
+  --accent1-color: #d1c9f8; */
+}
+
+html {
+  background-color: indigo;
+}
+
+
+ol {
+  text-align: left;
+  padding: 1.5em;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #d1c9f8;
+  padding: 1em;
+  text-align: center;
+}
+main {
+  margin: 1.5em auto;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 100%;
+}
+
+h1 {
+    font-size: 30pt;
+    font-family:'Parisienne', cursive;
+
+}
+h2 {
+    font-family:'Ubuntu', sans-serif;
+}
+
+h3 {
+    font-family:'Ubuntu', sans-serif;
+    font-size: 18pt;
+    padding: 0.25em;
+}
+
+
+h4 {
+  font-family:'Parisienne', cursive;
+  font-size: 18pt;
+}
+h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16pt;
+}
+
+.spotlight  {
+  border:  1px solid black;
+}
+
+header, footer {
+    border: 1px solid black;
+    padding: 1.5rem;
+    background-color: indigo;
+    text-align: center;
+    color: white;
+}
+
+header {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1em;
+}
+
+.date {
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color:#990aff; 
+  color: white;
+  font-size: 18pt;
+  font-family: 'Parisienne', cursive;
+}
+section {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-top: 0;
+    text-align: left;
+}
+
+nav button {
+  margin: .2rem;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  background-color: #990aff;
+  border-radius: 0.25em;
+}
+
+nav ul{
+  padding: 0;
+  margin: 1em;
+  list-style: none;
+  background-color:#990aff; 
+  font-family: 'Parisienne', cursive;
+}
+
+nav a {
+  color: white; 
+  font-size: 26px;
+}
+a:link { text-decoration: none; }
+nav a:hover {
+  color: #2f2259;
+  background-image: radial-gradient(white, #d1c9f8, #990aff);
+  border-radius: 10pt;
+}
+
+
+nav ul li a {
+  display: block;
+  padding: .8rem 2vw;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+
+
