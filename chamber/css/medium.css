@@ -1,26 +1,12 @@
 @media only screen and (min-width: 32.5em) {
 
-    nav ul{
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    
 
-      }
-      nav button {display: none;}
-
-      nav ul#primaryNav {
-          display: flex;
-          margin-left: 2vw;
-          border-left: 1px solid rgb(0, 0, 0, 0.3);
-      }
-      
-      nav ul li a {
-          border: none;
-          border-right: 1px solid rgb(0, 0, 0, 0.3);
-      }
 
       header img {
-        width: 128px;
+        max-width: 150px;
+        max-height: 150px;
+
       }
 
       main {
@@ -42,8 +28,58 @@
       }
       #event {
         grid-area: 5/1/6/2;
-     }
+      }
       #weather {
       grid-area: 5/2/6/3;
-   }
+      }
+
+      #event h3 {
+        font-size: 6vw;
+      }
+      
+      #event p {
+        top: 75%;
+        font-size: 18px;
+
+      }
+
+      #weather h3 {
+        position: none;
+        text-align: center;
+        
+      }
+
+      #join {
+        display: block;
+        padding: 0;
+        position: relative;
+        text-align: center;
+      }
+
+      #join h3 {
+        top: 15px;
+        right: 30px;
+        position: absolute;
+        font-size: 10vw;
+        font-family: 'Parisienne', cursive;
+        color: white;
+      }
+
+      #join p {
+        top: 88%;
+        position: absolute;
+        width: 100%;
+        font-size: 16px;
+        color: white;
+        object-fit: contain;
+      }
+
+      #join img {
+        display: block;
+        width:100%;
+        height: auto;
+        object-fit: contain;
+        padding: 0;
+        border-radius: 10px;
+      }
 }

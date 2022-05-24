@@ -29,16 +29,171 @@ main {
   margin: 1.5em auto;
 }
 
-img {
-  max-width: 100%;
+.social img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+#siteName, #newRelease, #event, #weather {
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+
+#siteName h3{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-family: 'Parisienne', cursive;
+  font-size: 5vw;
+  color: white;
+}
+
+#siteName img {
+  display: block;
+  width:100%;
+  height: auto;
+  object-fit: contain;
+  padding: 0;
+  border-radius: 10px;
+}
+
+#siteName div {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 2.5vw;
+  color: white;
+  border: 1px solid black;
+  padding: 1em;
+  border-radius: 15pt;
+  background: rgba(153, 10, 255, 0.2);
+}
+
+#newRelease h3 {
+  position: absolute;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Parisienne', cursive;
+  color: black;
+}
+
+#newRelease p {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  object-fit: contain;
+}
+
+#newRelease img {
+  display: block;
+  width:100%;
+  height: auto;
+  object-fit: contain;
+  padding: 0;
+  border-radius: 10px;
+  opacity: 0.2;
+}
+
+#event h3 {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  text-align: center;
+  font-size: 7.5vw;
+  font-family: 'Parisienne', cursive;
+  color: white;
+}
+
+#event p {
+  position: absolute;
+  top: 68%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  object-fit: contain;
+}
+
+#event img {
+  display: block;
+  width:100%;
+  height: auto;
+  object-fit: contain;
+  padding: 0;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+#weather h3 {
+  width: 100%;
+  font-size: 36px;
+  font-family: 'Parisienne', cursive;
+  color: black;
+}
+
+#weather img {
+  display: block;
+  width:100%;
+  height: auto;
+  object-fit: contain;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#spotlights {
+  text-align: center;
+}
+
+#spotlights img {
+  width: 30%;
+  height: auto;
+  float: right;
   border-radius: 100%;
+  padding: 0;
+}
+
+.spotlight3 img {
+  float: center;
+}
+
+.spotlight1, .spotlight2, .spotlight3 {
+  background-color: #d1c9f8;
+}
+
+.spotlight3 {
+  display: none;
+}
+
+#banner {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid indigo;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15pt;
+}
+
+#join {
+  display: none;
+}
+
+section div {
+  border:  1px solid black;
 }
 
 h1 {
     font-size: 30pt;
     font-family:'Parisienne', cursive;
-
 }
+
 h2 {
     font-family:'Ubuntu', sans-serif;
 }
@@ -49,7 +204,6 @@ h3 {
     padding: 0.25em;
 }
 
-
 h4 {
   font-family:'Parisienne', cursive;
   font-size: 18pt;
@@ -57,10 +211,6 @@ h4 {
 h5, h6 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16pt;
-}
-
-.spotlight  {
-  border:  1px solid black;
 }
 
 header, footer {
@@ -81,7 +231,9 @@ header {
 header img {
   width: 80px;
   height: auto;
+  border-radius: 100%;
 }
+
 .heading {
   display: flex;
   flex-direction: column;
@@ -108,6 +260,11 @@ section {
     margin: 0.5rem;
     margin-top: 0;
     text-align: left;
+    box-shadow: 5px 5px 5px #999;
+}
+
+#businessInfo img {
+  border-radius: 100%;
 }
 
 nav button {

@@ -29,3 +29,14 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 );
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
+
+function banner() {
+
+    let d = new Date().getDay();
+
+    const banner = document.getElementById("banner")        
+    if (d != 5 || d != 6) {
+        banner.style.display = "none";
+    }
+
+}
