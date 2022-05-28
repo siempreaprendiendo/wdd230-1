@@ -1,16 +1,6 @@
-let modDate = new Date(document.lastModified)
-let curDate = new Date()
-let year = curDate.getFullYear()
-let modYear = modDate.getFullYear()
-let modMonth = modDate.getMonth()
-let modDay = modDate.getDate()
-let modWkDay = modDate.getDay()
-let modHrs = modDate.getHours()
-let modMin = modDate.getMinutes()
-let modSec = modDate.getSeconds()
+let modDate = document.lastModified
 
-
-document.getElementById("dateMod").innerHTML = `Last Modified: ${modMonth}/${modDay}/${modYear} ${modHrs}:${modMin}:${modSec}`;
+document.getElementById("dateMod").innerHTML = `Last Modified: ${document.lastModified}`;
 document.getElementById("year").innerText = year;
 
 function toggleMenu() {
@@ -30,13 +20,35 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
 
-function banner() {
 
-    let d = new Date().getDay();
 
-    const banner = document.getElementById("banner")        
-    if (d != 5 || d != 6) {
-        banner.style.display = "none";
+let d = new Date().getDay();
+
+const banner = document.getElementById("banner")        
+  if (d === 1 || d === 2) {
+      banner.style.display = "block";
     }
 
-}
+    
+function doInputOutput() {
+    let tempF = parseFloat(document.getElementById("tempF").value);
+    let speed = parseFloat(document.getElementById("speed").value);
+    let templimit = 50;
+    let wspeedlimit = 3;
+
+    if (tempF <= templimit && speed > wspeedlimit) {
+      let windchill = windChill(tempF, speed).toFixed(1);
+      document.getElementById("display1").innerHTML = `The windchill today <strong>${windchill}</strong>°F. 🥶Brrrr!`;
+        } else {
+          document.getElementById("display1").textContent =
+            "Temperature must be less than 50°F and windspeed must be more than 3MPH to calculate the Wind Chill. Please try again.";
+        }
+      }
+      function windChill(tempF, speed) {
+        return (
+          35.74 +
+          0.6215 * tempF -
+          35.75 * Math.pow(speed, 0.16) +
+          0.4275 * tempF * Math.pow(speed, 0.16)
+        );
+      }

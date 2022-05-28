@@ -46,7 +46,7 @@
         
        <section id="siteName">
             <h3>Welcome to Artemisia</h3>
-            <img src="images/artemisiaCityEarth2.jpg" alt="artemisia city">
+            <img src="images/wdd230-org.webp" alt="artemisia city">
             <div>Join the Chamber</div>
         </section>
        <section id="event">
@@ -56,6 +56,18 @@
        </section>
        <section id="weather">
            <h3>Weather</h3>
+           <section id="windChill">
+               <div class="input">
+                    <label>Temperature<input type="text" id="tempF" /></label>
+               </div>
+               <div class="input">
+                    <label>Wind Speed<input type="text" id="speed" /></label>
+               </div>
+               <div class="processing">
+                    <button onclick="doInputOutput()">Wind Chill</button>
+               </div>
+               <div id="display1"></div>
+            </section> 
            <img src="images/weather.jfif" alt="Weather">
        </section>
        <section id="newRelease">
