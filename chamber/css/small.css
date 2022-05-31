@@ -272,10 +272,6 @@ nav ul{
   font-family: 'Parisienne', cursive;
 }
 
-nav a {
-  color: white; 
-  font-size: 26px;
-}
 a:link { text-decoration: none; }
 nav a:hover {
   color: #2f2259;
@@ -283,13 +279,10 @@ nav a:hover {
   border-radius: 10pt;
 }
 
-
 nav ul li a {
   display: block;
-  padding: .8rem 2vw;
-  text-decoration: none;
-  color: white;
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  color: white; 
+  font-size: 26px;  
 }
 
 nav ul li.active a {
