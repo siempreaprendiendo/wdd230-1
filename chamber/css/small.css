@@ -44,7 +44,7 @@ main {
   right: 16px;
   font-family: 'Parisienne', cursive;
   font-size: 5vw;
-  color: white;
+  /* color: white; */
 }
 
 #siteName img {
@@ -93,11 +93,14 @@ main {
   opacity: 0.2;
 }
 
+#event {
+  background-color: black;
+}
+
 #event h3 {
   position: absolute;
   top: 55%;
   width: 100%;
-  text-align: center;
   font-size: 7.5vw;
   font-family: 'Parisienne', cursive;
   color: white;
@@ -143,29 +146,33 @@ main {
   bottom: 10%;
 }
 
-#spotlights {
-  text-align: center;
+.input label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: .25em;
+  
 }
 
-#spotlights img {
-  width: 30%;
-  height: auto;
-  float: right;
-  border-radius: 100%;
-  padding: 0;
-
-}
-
-.spotlight3 img {
-  float: center;
-}
-
-.spotlight1, .spotlight2, .spotlight3 {
+.spotlight {
   background-color: #d1c9f8;
+  border: 1px solid black;
 }
 
 .spotlight3 {
   display: none;
+}
+
+.spotlight h3 {
+  padding: 1em;
+}
+
+#spotlights img {
+  width: 50%;
+  height: auto;
+  float: right;
+  border-radius: 100%;
+  padding: 1em;
 }
 
 #banner {
@@ -180,6 +187,7 @@ main {
 
 #join {
   display: none;
+  background-color: black;
 }
 
 h1 {
@@ -189,12 +197,6 @@ h1 {
 
 h2 {
     font-family:'Ubuntu', sans-serif;
-}
-
-h3 {
-    font-family:'Ubuntu', sans-serif;
-    font-size: 18pt;
-    padding: 0.25em;
 }
 
 h4 {
@@ -220,7 +222,7 @@ header {
 }
 
 header img {
-  width: 80px;
+  width: 100px;
   height: auto;
   border-radius: 100%;
 }

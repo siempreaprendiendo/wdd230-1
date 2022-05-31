@@ -33,19 +33,15 @@
       }
 
       #event h3 {
-        font-size: 2rem;
-        top: 50%;
+        font-size: 3.5vw;
+        padding: 1em;
+        top: 20%;
       }
       
       #event p {
-        top: 68%;
+        top: 40%;
         font-size: 18px;
 
-      }
-
-      #weather h3 {
-        position: none;
-        text-align: center;        
       }
 
       #join {
@@ -66,9 +62,9 @@
 
       #join p {
         position: absolute;
-        top: 90%;
-        right: 12%;
-        width: 100%;
+        top: 85%;
+        text-align: left;
+        width: 65%;
         font-size: 16px;
         color: white;
         object-fit: contain;
