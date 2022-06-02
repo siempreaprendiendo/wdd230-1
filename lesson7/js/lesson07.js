@@ -3,19 +3,19 @@ const imagesToLoad = document.querySelectorAll("img[data-src]")
 
 // Parameters being set for the IntersectionalObserver
 const imgOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px 50px 0px"
+    threshold: 100,
+    rootMargin: "0px 0px -500px 0px"
 };
 
 const loadImages = (image) => {
-    image.setAttribute('src', image.getAttribute('data-scr'));
+    image.setAttribute('src', image.getAttribute('data-src'));
     image.onload = () => {
         image.removeAttribute('data-src');
     };
 };
 
 if('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((items, observer) => {
+    const imgObserver = new IntersectionObserver((items, observer) => {
       items.forEach((item) => {
         if(item.isIntersecting) {
           loadImages(item.target);
@@ -24,7 +24,7 @@ if('IntersectionObserver' in window) {
       });
     });
     imagesToLoad.forEach((img) => {
-      observer.observe(img);
+      imgObserver.observe(img);
     });
   } else {
     imagesToLoad.forEach((img) => {
