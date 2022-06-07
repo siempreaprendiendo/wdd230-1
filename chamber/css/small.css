@@ -319,6 +319,8 @@ nav ul.open {display: block;}
 #images section {
   padding: 25px 50px;
   margin: 2em;
+  background-color: #2f2259;
+  color: white;
 }
 
 #images picture {

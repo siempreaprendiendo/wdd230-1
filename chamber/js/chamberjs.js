@@ -3,6 +3,8 @@ let modDate = document.lastModified
 document.getElementById("dateMod").innerHTML = `Last Modified: ${document.lastModified}`;
 document.getElementById("year").innerText = year;
 
+// Hamburger button javascript
+
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById('hamburgerBtn').classList.toggle("open");
@@ -20,7 +22,7 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
 
-
+// Banner javascript
 
 let d = new Date().getDay();
 
@@ -28,6 +30,8 @@ const banner = document.getElementById("banner")
   if (d === 1 || d === 2) {
       banner.style.display = "block";
     }
+
+// Wind Chill javascript
 
     function doInputOutput() {
       let tempF = parseFloat(document.getElementById("tempF").value);
@@ -51,3 +55,6 @@ const banner = document.getElementById("banner")
             0.4275 * tempF * Math.pow(speed, 0.16)
           );
         }
+
+//discovery page javascript
+
