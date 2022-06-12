@@ -1,12 +1,23 @@
     html {
-        font-family: sans-serif;
+        font-family: Ubuntu, sans-serif;
       }
       
+      body {
+        padding: 2em;
+      }
+
       table {
         border-collapse: collapse;
         border: 2px solid rgb(200,200,200);
         letter-spacing: 1px;
-        font-size: 0.8rem;
+        margin: auto;
+        box-shadow: 10px 10px gray;
+      }
+
+      thead tr th {
+        font-size: 18pt;
+        background-color: blue;
+        color: white;
       }
       
       td, th {
@@ -23,13 +34,21 @@
       }
       
       tr:nth-child(even) td {
-        background-color: rgb(250,250,250);
+        background-color: rgb(186, 231, 247);
       }
       
       tr:nth-child(odd) td {
         background-color: rgb(245,245,245);
       }
-      
+
+      tfoot {
+        background-color: blue;
+      }
+
+      tfoot tr td {
+        
+        color: blue;
+      }
       caption {
         padding: 10px;
       }
