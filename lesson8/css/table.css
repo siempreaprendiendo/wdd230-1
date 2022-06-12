@@ -16,8 +16,14 @@
 
       thead tr th {
         font-size: 18pt;
-        background-color: blue;
+        background-color: rgb(4, 65, 100);
         color: white;
+      }
+
+      tfoot {
+        background-color: rgb(4, 65, 100);
+        color: white;
+        font-size: 10pt;
       }
       
       td, th {
@@ -26,7 +32,7 @@
       }
       
       th {
-        background-color: rgb(235,235,235);
+        background-color: rgb(137, 153, 195);
       }
       
       td {
@@ -34,21 +40,15 @@
       }
       
       tr:nth-child(even) td {
-        background-color: rgb(186, 231, 247);
-      }
-      
-      tr:nth-child(odd) td {
-        background-color: rgb(245,245,245);
+        background-color: rgb(166, 193, 255);
       }
 
-      tfoot {
-        background-color: blue;
-      }
 
-      tfoot tr td {
-        
-        color: blue;
-      }
+      tbody tr:nth-child(5) td:nth-child(3) {
+        background-color: rgb(6, 53, 81);
+        color: white;
+    }
+
       caption {
         padding: 10px;
       }
