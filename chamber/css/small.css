@@ -338,10 +338,6 @@ form {
     display: inline-block;
 }
 
-input {
-  width: 100%;
-}
-
 form fieldset {
   margin: 2rem 0;
   border: 1px solid #445ba9;
@@ -383,7 +379,7 @@ form label.sbs {
 
 form input.submitBtn {
   border: none;
-  background-color: #9c2c13;
+  background-color: indigo;
   color: white;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
@@ -397,7 +393,24 @@ form label.top input:required {
 }
 
 form label.top input:required:valid {
-  border-left: grenn solid 6px;
+  border-left: green solid 6px;
+}
+
+/* ------------- thankyou.html ------------------ */
+
+.thanks {
+  text-align: center;
+}
+
+.thanks h2 {
+  font-family: 'Parisienne', cursive;
+  font-size: 46pt;
+}
+
+.thanks p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18pt;
+  line-height: 0;
 }
 
 
