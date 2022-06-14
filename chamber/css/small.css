@@ -335,7 +335,7 @@ form {
     margin: auto;
     background: white;
     padding: 10px;
-    display: inline-block;
+    border-radius: 2%;
 }
 
 form fieldset {
