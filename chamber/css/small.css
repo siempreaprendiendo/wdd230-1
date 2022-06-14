@@ -330,10 +330,16 @@ nav ul.open {display: block;}
 
 /* ------------------ FORM -------------------- */
 
-main form {
-  background-color: white;
-  align-items: center;
-  padding: 1em;
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+input {
+  width: 100%;
 }
 
 form fieldset {
