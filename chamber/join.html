@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artemisia Chamber of Commerce</title> 
+    <meta name="description" content="The purpouse of this page is to inform both the consumer and business owner of the commerce here in Artemisia.">
+    <link rel="sylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+        <header>
+            <img src="images/artemisiaLogo.webp" alt="Logo">
+            <div class="heading">
+                <h1>Artemisia</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+            <div class="social">
+                <img src="images/facebook.png" alt="facebook logo">
+                <img src="images/pinterest.png" alt="pinterest logo">
+            </div>
+            <nav>
+               <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Discover</a></li>
+                    <li><a href="index.html">Directory</a></li>
+                    <li><a href="index.html">Join</a></li>
+                    <li><a href="index.html">Contact</a></li>
+
+                </ul>
+            </nav>    
+        </header>
+    <div class="date"></div>
+    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="top">Business Name <input type="text" name="title" required></label>
+                <label class="top">Business Possition Title <input type="text" name="title" ></label>
+                <label class="top">Business Description <input type="description" name="textarea" ></label>
+            </fieldset>
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label class="sbs"><input type="radio" name="membership" value="np">NP Membership is for non profit organizations and there is no fee</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership $50</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership $100</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership $150</label>
+            </fieldset>
+            
+            <input type="submit" value="Join Now" name="joinButton" class="submitBtn">
+        </form>       
+    </main>
+    <footer>
+        <div id="businessInfo">
+            <img src="images/artemisiaLogo.webp" alt="Artemisia Logo">
+            <h3>Artemisia Chamber of Commerce</h3>
+            <div id="address">
+                <p>152 Lunar Way</p>
+                <p>Artemisia, Luna 12345</p>
+            </div>
+            <div id="email">
+               <p>info@artemisiacc.org</p>
+               <p>📌Location Map</p>
+            </div>
+            <hr>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> 🗻 Rebecca L. Jimenez 🗻 Washington</p>
+        <div id="dateMod"></div>
+    </footer>
+    <script src="js/chamberjs.js" defer></script>
+
+  </body>
+
+</html>
