@@ -92,6 +92,18 @@
         font-size: 12px;
       }
 
+      /* ------------------ FORM -------------------- */
+
+  .joinForm {
+    align-items: center;
+  }
+
+  form {
+    min-width: 600px;
+    padding: 2em;
+  }
+
+
       
 }
 
