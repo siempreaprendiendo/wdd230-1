@@ -340,13 +340,13 @@ form {
 
 form fieldset {
   margin: 2rem 0;
-  border: 1px solid #445ba9;
+  border: 1px solid indigo;
   border-radius: 10px;
   padding: .5rem 2%;
 }
 
 form legend {
-  color: #445ba9;
+  color: indigo;
   margin: 0 1rem;
   padding: 0 .5rem;
 }
@@ -354,7 +354,7 @@ form legend {
 form label.top, form div {
   display: blokc;
   padding-top: 1rem;
-  color: #9c2c13;
+  color: indigo;
   font-size: .8rem;
 }
 
@@ -368,6 +368,7 @@ form label.top input, form label.top select {
   color: #555;
   width: 100%;
   max-width: 20rem;
+  margin: auto;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -389,11 +390,11 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-  border-left: red solid 6px;
+  border: red solid 1px;
 }
 
 form label.top input:required:valid {
-  border-left: green solid 6px;
+  border: green solid 1px;
 }
 
 /* ------------- thankyou.html ------------------ */
