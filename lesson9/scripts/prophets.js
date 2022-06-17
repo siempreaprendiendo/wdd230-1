@@ -29,8 +29,9 @@ function buildCards(info) {
 
         card.append(h2);
         card.append(p);
-        cards.append(card);
         card.append(img);
+        cards.append(card);
+        
     });
 }
 
