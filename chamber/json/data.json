@@ -1,0 +1,85 @@
+{
+    "members": [
+      {
+        "name": "Lihn Cinder",
+        "businessName": "Cyborg Mechanics",
+        "address": "12345 Moon drive, Artemisia, MN 98765",
+        "phone": "206-555-7305",
+        "website": "cyborgmechanics.com",
+        "memLvl": "silver",
+        "imageurl": ""
+      },
+      {
+        "name": "Crescentmoon Darnel",
+        "businessName": "Cresent Moon Electronics",
+        "address": "23456 Moon drive, Artemisia, MN 98765",
+        "phone": "206-555-7181",
+        "website": "cmelectronics.com",
+        "memLvl": "Gold",
+        "imageurl": ""
+      },
+      {
+        "name": "Winter Hale Blackburn",
+        "businessName": "Winter Sweet Shop",
+        "address": "34567 Moon drive, Artemisia, MN 98765",
+        "phone": "206-555-1310",
+        "website": "wintersweets.com",
+        "memLvl": "Gold",
+        "imageurl": ""
+      },
+      {
+        "name": "Dmitri Erland",
+        "businessName": "Erland Research and Development",
+        "address": "45678 Moon drive, Artemisia, MN 98765",
+        "phone": "206-555-9251",
+        "website": "erlandrd.org",
+        "memLvl": "Non Profit",
+        "imageurl": ""
+      },
+      {
+        "name": "Scarlet Benoit",
+        "businessName": "Benoit Farms",
+        "address": "56789 Moon drive, Artemisia, MN 98765",
+        "phone": "206-555-8171",
+        "website": "benoitfarms.com",
+        "memLvl": "Bronze",
+        "imageurl": ""
+      },
+      {
+        "name": "Iko Garan ",
+        "businessName": "Iko Fashion",
+        "address": "23451 Moon drive, Artemisia, MN 98765",
+        "phone": "206-555-0121",
+        "website": "ikofashion.com",
+        "memLvl": "Gold",
+        "imageurl": ""
+      },
+      {
+        "name": "Emily Monfort",
+        "businessName": "Rieux Tavern",
+        "address": "34512 Moon drive, Artemisia, MN 98765",
+        "phone": "206-555-0104",
+        "website": "rieuxtavern.com",
+        "memLvl": "Bronze",
+        "imageurl": ""
+      },
+      {
+        "name": "Carswell Thorne",
+        "businessName": "Thorne Delivery",
+        "address": "45123 Moon drive, Artemisia, MN 98765",
+        "phone": "206-555-8359",
+        "website": "thornedelivery.com",
+        "memLvl": "Gold",
+        "imageurl": ""
+      },
+      {
+        "name": "Jacin Clay",
+        "businessName": "Clay Medical Clinic",
+        "address": "12345 Moon drive, Artemisia, MN 98765",
+        "phone":"206-555-7810",
+        "website": "claymd.org",
+        "memLvl": "Silver",
+        "imageurl": ""
+      }
+    ]
+  }
