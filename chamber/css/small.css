@@ -416,13 +416,9 @@ form label.top input:required:valid {
 
 /* ---------------------------cards --------------------------------- */
 
-#dirHtml {
-  display: flex;
-}
 
 .members section {
   margin: 1rem;
-  padding: 0.35rem;
 }
 
 .cards section {
@@ -433,23 +429,9 @@ form label.top input:required:valid {
 
 .cards {
   margin-left: 1rem;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
   grid-gap: 1rem;
-}
-
-section img {
-  width: 150px;
-  height: auto;
-  box-shadow: 2px 2px 2px gray;
-}
-
-footer {
-  border: 1px solid black;
-  padding: 15px;
-  background-color: indigo;
-  color: white;
-  text-align: center;
 }
 
 @media (max-width: 29.3rem) {
@@ -460,3 +442,4 @@ footer {
   .cards section {
       margin: .2rem;
   }
+}
