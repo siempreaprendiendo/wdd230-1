@@ -1,4 +1,4 @@
-const requestURL = "json/data.json";
+const requestURL = "https://siempreaprendiendo.github.io/wdd230/chamber/json/data.json";
 const cards = document.querySelector('.members');
 
 
@@ -16,24 +16,33 @@ async function getDirectory() {
 }
 
 function buildCards(data) {
-    data.prophets.forEach(prophet => {
+    data.members.forEach(member => {
         let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let p = document.createElement('p');
+        let name = document.createElement('h2');
+        let bname = document.createElement('p')
+        let address = document.createElement('p');
+        let phn = document.createElement('p');
+        let wbst = document.createElement('p');
+        let mblv = document.createElement('p');
         let img = document.createElement('img');
-        let birthDate = document.createElement('p')
 
-        h2.innerHTML = `${prophet.name} ${prophet.lastname}`;
-        p.innerHTML = `Location of Birth: <strong>${prophet.birthplace}</storng>`;
-        img.setAttribute('src', `${prophet.imageurl}`);
-        img.setAttribute('alt', `Portrait of President ${prophet.name} ${prophet.lastname}`)
+        name.innerHTML = `${member.name} ${member.lastname}`;
+        bname.innerHTML = `<strong>${member.businessName}</storng>`;
+        address.innerHTML = `Adress: ${member.address}`;
+        phn.innerHTML = `Phone #: ${member.phone}`;
+        wbst.innerHTML = `${member.website}`;
+        mblv.innerHTML = `Member Level: ${member.memLvl}`
+        img.setAttribute('src', `${member.imageurl}`);
+        img.setAttribute('alt', `${member.businessName}`)
         img.setAttribute('loading', 'lazy');
-        birthDate.innerHTML = `${prophet.birthdate}`;
+        
 
-        card.append(h2);
-        card.append(p);
-        card.append(birthDate)
-        card.append(img);
+        card.append(name);
+        card.append(bname);
+        card.append(address);
+        card.append(phn);
+        card.append(wbst);
+        card.append(mblv);
         cards.append(card);
         
     });
