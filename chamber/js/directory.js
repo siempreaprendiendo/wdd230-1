@@ -48,4 +48,20 @@ function buildCards(data) {
     });
 }
 
-getDirectory();
+getDirectory("grid");
+
+gridbutton.addEventListener("click", () => {
+    if (display.classList.value == "cards list") {
+      deleteItems();
+      display.classList.remove("list");
+      getBusinesses("grid");
+    }
+  });
+  
+  listbutton.addEventListener("click", () => {
+    if (display.classList.value == "cards grid") {
+      deleteItems();
+      display.classList.remove("grid");
+      getBusinesses("list");
+    }
+  });
