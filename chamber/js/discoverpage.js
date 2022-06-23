@@ -1,11 +1,13 @@
 //discovery page javascript
 
 // initialize display elements
-const todayDisplay = document.querySelector(".today");
+const dayDisplay = document.querySelector(".timeElapse");
 const visitsDisplay = document.querySelector(".visits");
+
 
 // get the stored value in localStorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
+let milsec = Number(window.localStorage.getItem("mills-ls"));
 
 // determine if this is the first visit or display the number of visits.
 if (numVisits !== 0) {
@@ -15,11 +17,26 @@ if (numVisits !== 0) {
 }
 
 // increment the number of visits.
-
-// how should this be improved?
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 
-// show todays date.
-todayDisplay.textContent = Date.now();
+// Show the number of days since last visit if milliseconds does not = 0
+
+if (milsec !== 0) {
+	let days = Math.round((Date.now() - milsec) / 86400000);
+	let hrs = Math.round((Date.now() - milsec) / 36000000);
+	let mins = Math.round((Date.now() - milsec) / 60000);
+	let secs = Math.round((Date.now() - milsec) / 1000);
+	dayDisplay.innerHTML = `${days} days: ${hrs} hours: ${mins} minutes: ${secs} seconds.`;
+
+} else {
+	dayDisplay.textContent = `This is your first visit`;
+}
+
+// store date in number os milliseconds
+
+milsec = Date.now();
+localStorage.setItem("mills-ls", milsec);
+
+

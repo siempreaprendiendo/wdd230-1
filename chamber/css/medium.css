@@ -124,6 +124,14 @@
         grid-area: 5/2/6/3;
       }
 
+      .caption6 {
+        grid-area: 6/1/7/2;
+      }
+
+      .image6 {
+        grid-area: 6/2/7/3;
+      }
+
       picture {
         position: relative;
         width: 100%;

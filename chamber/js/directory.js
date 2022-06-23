@@ -50,18 +50,50 @@ function buildCards(data) {
 
 getDirectory("grid");
 
-gridbutton.addEventListener("click", () => {
-    if (display.classList.value == "cards list") {
+grid.addEventListener("click", () => {
+    if (display.members.value == "cards list") {
       deleteItems();
-      display.classList.remove("list");
+      display.members.remove("list");
       getBusinesses("grid");
     }
   });
   
-  listbutton.addEventListener("click", () => {
+  list.addEventListener("click", () => {
     if (display.classList.value == "cards grid") {
       deleteItems();
       display.classList.remove("grid");
       getBusinesses("list");
     }
   });
+
+  // -- buttons --
+
+let elements = document.getElementsByClassName("members");
+
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].getElementsByClassName.width = "100%"
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].getElementsByClassName.width = "50%";
+  }
+}
+
+/* Optional: Add active class to the current button (highlight it) */
+// var container = document.getElementById("directoryMenu");
+// var btns = container.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+
