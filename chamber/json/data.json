@@ -1,13 +1,14 @@
 {
     "members": [
       {
+        "logo": "images/gear2.png",
         "name": "Lihn Cinder",
         "businessName": "Cyborg Mechanics",
         "address": "12345 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-7305",
         "website": "cyborgmechanics.com",
-        "memLvl": "silver",
-        "imageurl": ""
+        "memLvl": "silver"
+        
       },
       {
         "name": "Crescentmoon Darnel",
@@ -16,16 +17,16 @@
         "phone": "206-555-7181",
         "website": "cmelectronics.com",
         "memLvl": "Gold",
-        "imageurl": ""
+        "imageurl": "circuit.png"
       },
       {
         "name": "Winter Hale Blackburn",
-        "businessName": "Winter Sweet Shop",
+        "businessName": "Winter's Sweet Shop",
         "address": "34567 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-1310",
         "website": "wintersweets.com",
         "memLvl": "Gold",
-        "imageurl": ""
+        "logo": "candy.webp"
       },
       {
         "name": "Dmitri Erland",
@@ -34,7 +35,7 @@
         "phone": "206-555-9251",
         "website": "erlandrd.org",
         "memLvl": "Non Profit",
-        "imageurl": ""
+        "logo": "research.png"
       },
       {
         "name": "Scarlet Benoit",
@@ -43,7 +44,7 @@
         "phone": "206-555-8171",
         "website": "benoitfarms.com",
         "memLvl": "Bronze",
-        "imageurl": ""
+        "logo": "farm.webp"
       },
       {
         "name": "Iko Garan ",
@@ -52,7 +53,7 @@
         "phone": "206-555-0121",
         "website": "ikofashion.com",
         "memLvl": "Gold",
-        "imageurl": ""
+        "logo": "fashion.png"
       },
       {
         "name": "Emily Monfort",
@@ -61,7 +62,7 @@
         "phone": "206-555-0104",
         "website": "rieuxtavern.com",
         "memLvl": "Bronze",
-        "imageurl": ""
+        "logo": "tavern.jpg"
       },
       {
         "name": "Carswell Thorne",
@@ -70,7 +71,7 @@
         "phone": "206-555-8359",
         "website": "thornedelivery.com",
         "memLvl": "Gold",
-        "imageurl": ""
+        "logo": "spaceship"
       },
       {
         "name": "Jacin Clay",
@@ -79,7 +80,7 @@
         "phone":"206-555-7810",
         "website": "claymd.org",
         "memLvl": "Silver",
-        "imageurl": ""
+        "logo": "clinic"
       }
     ]
   }
