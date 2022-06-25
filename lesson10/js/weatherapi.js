@@ -1,0 +1,32 @@
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=Imperial&appid=7671f53ea22020bf2f3a9e4bc7ae05f4`;
+
+apiFetch(url);
+
+async function apiFetch(apiURL) {
+
+    try {
+        const response = await fetch(apiURL);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data); // temp //
+            // displayResults(data)
+
+        } else {
+            throw Error(await response.text(error))
+        } 
+    } catch (error) {
+        console.log(error);
+    }
+
+} 
+
+function displayResults(weatherData) {
+    currentTemp.innerHTML = `<strong> ${weatherData.main.temp.toFixed(1)}</strong>`;
+
+    const imagesrc = weatherIcon.setAttribute('src', imagesrc);
+}
+
