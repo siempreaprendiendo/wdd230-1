@@ -1,7 +1,7 @@
 {
     "members": [
       {
-        "logo": "images/gear2.png",
+        "logo": "images/gear2.webp",
         "name": "Lihn Cinder",
         "businessName": "Cyborg Mechanics",
         "address": "12345 Moon drive, Artemisia, MN 98765",
@@ -17,7 +17,7 @@
         "phone": "206-555-7181",
         "website": "cmelectronics.com",
         "memLvl": "Gold",
-        "imageurl": "circuit.png"
+        "imageurl": "circuit.webp"
       },
       {
         "name": "Winter Hale Blackburn",
@@ -35,7 +35,7 @@
         "phone": "206-555-9251",
         "website": "erlandrd.org",
         "memLvl": "Non Profit",
-        "logo": "research.png"
+        "logo": "research.webp"
       },
       {
         "name": "Scarlet Benoit",
@@ -53,7 +53,7 @@
         "phone": "206-555-0121",
         "website": "ikofashion.com",
         "memLvl": "Gold",
-        "logo": "fashion.png"
+        "logo": "fashion.webp"
       },
       {
         "name": "Emily Monfort",
@@ -62,7 +62,7 @@
         "phone": "206-555-0104",
         "website": "rieuxtavern.com",
         "memLvl": "Bronze",
-        "logo": "tavern.jpg"
+        "logo": "tavern.webp"
       },
       {
         "name": "Carswell Thorne",
@@ -71,7 +71,7 @@
         "phone": "206-555-8359",
         "website": "thornedelivery.com",
         "memLvl": "Gold",
-        "logo": "spaceship"
+        "logo": "spaceship.webp"
       },
       {
         "name": "Jacin Clay",
@@ -80,7 +80,7 @@
         "phone":"206-555-7810",
         "website": "claymd.org",
         "memLvl": "Silver",
-        "logo": "clinic"
+        "logo": "clinic.webp"
       }
     ]
   }
