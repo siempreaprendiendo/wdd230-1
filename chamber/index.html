@@ -57,21 +57,13 @@
            <p>Come join us every Thursday evening to gaze at the earth and observe its phases.</p>
        </section>
        <section id="weather">
-           <h3>Weather</h3>
-           <section id="windChill">
-               <h4>Today's Wind Chill</h4>
-               <div class="input">
-                    <label>Temperature<input type="text" id="tempF" /></label>
-               </div>
-               <div class="input">
-                    <label>Wind Speed<input type="text" id="speed" /></label>
-               </div>
-               <div class="processing">
-                    <button onclick="doInputOutput()">Wind Chill</button>
-               </div>
-               <div id="display1"></div>
-            </section> 
-           <img src="images/weather.webp" alt="Weather">
+            <h3>Weather</h3>
+            <p>The current temperature in Artimesia is: <span id="current-temp"></span> &deg;F</p>
+            <h2>Current Condition Icon</h2>
+            <figure>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+            </figure>
        </section>
        <section id="newRelease">
            <img src="images/moon7.webp" alt="New Moon">
@@ -119,6 +111,7 @@
         <div id="dateMod"></div>
     </footer>
     <script src="js/chamber.js" defer></script>
+    <script src="js/weatherapi.js" defer></script>
 
   </body>
 
