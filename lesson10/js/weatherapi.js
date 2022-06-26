@@ -12,11 +12,11 @@ async function apiFetch(apiURL) {
         const response = await fetch(apiURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // temp //
-            // displayResults(data)
+            // console.log(data); // temp //
+            displayResults(data)
 
         } else {
-            throw Error(await response.text(error))
+            throw Error(await response.text());
         } 
     } catch (error) {
         console.log(error);
@@ -27,6 +27,11 @@ async function apiFetch(apiURL) {
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong> ${weatherData.main.temp.toFixed(1)}</strong>`;
 
-    const imagesrc = weatherIcon.setAttribute('src', imagesrc);
+    const imagesrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const desc = weatherData.weather[0].description;
+    weatherIcon.setAttribute('src', imagesrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.innerHTML = desc;
+
 }
 
