@@ -27,8 +27,8 @@ if (milsec !== 0) {
 	let days = Math.round((Date.now() - milsec) / 86400000);
 	let hrs = Math.round((Date.now() - milsec) / 36000000);
 	let mins = Math.round((Date.now() - milsec) / 60000);
-	let secs = Math.round((Date.now() - milsec) / 1000);
-	dayDisplay.innerHTML = `${days} days: ${hrs} hours: ${mins} minutes: ${secs} seconds.`;
+	
+	dayDisplay.innerHTML = `${days} days: ${hrs} hours: ${mins} minutes.`;
 
 } else {
 	dayDisplay.textContent = `This is your first visit`;
