@@ -33,7 +33,7 @@ function buildCards(data) {
         address.innerHTML = `Adress: ${member.address}`;
         phn.innerHTML = `Phone #: ${member.phone}`;
         wbst.innerHTML = `${member.website}`;
-        mblv.innerHTML = `Member Level: ${member.memLvl}`;
+        mblv.innerHTML = `Member Level: <strong>${member.memLvl}<strong>`;
         img.setAttribute('src', `images/${member.logo}`);
         img.setAttribute('alt', `${member.businessName}`);
         img.setAttribute('loading', 'lazy');

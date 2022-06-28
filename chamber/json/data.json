@@ -1,15 +1,13 @@
 {
     "members": [
       {
-        "logo": "images/gear2.webp",
         "name": "Lihn Cinder",
         "businessName": "Cyborg Mechanics",
         "address": "12345 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-7305",
         "website": "cyborgmechanics.com",
-        "memLvl": "silver",
-        "imageurl": "gear2.webp"
-        
+        "memLvl": "Silver",
+        "logo": "gear2.webp"
       },
       {
         "name": "Crescentmoon Darnel",
@@ -18,7 +16,7 @@
         "phone": "206-555-7181",
         "website": "cmelectronics.com",
         "memLvl": "Gold",
-        "imageurl": "circuit.webp"
+        "logo": "circuit.webp"
       },
       {
         "name": "Winter Hale Blackburn",

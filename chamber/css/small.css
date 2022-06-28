@@ -254,11 +254,6 @@ header img {
   flex-direction: column;
 }
 
-p {
-  font-family: 'Ubuntu', sans-serif;
-  padding: 1em;
-}
-
 .date {
   padding: 1em;
   margin-bottom: 1.5em;
