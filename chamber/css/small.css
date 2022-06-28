@@ -130,19 +130,37 @@ main {
   opacity: 0.8;
 }
 
+#weather {
+  padding: 10%;
+}
+
+#weather div {
+  display: flex;
+  font-size: 15pt;
+  padding: .5rem;
+  border: 1px solid black;
+}
+
 #weather h3 {
-  position: absolute;
-  top: 60%;
+  
+  top:10%;
   left: 10%;
   width: 100%;
-  font-size: 36px;
+  font-size: 30px;
   font-family: 'Parisienne', cursive;
   color: black;
+}
+
+#weather p {
+  padding: 0.5em 0 0  0 ;
 }
 
 #weather img {
   width:50%;
   border-radius: 10px;
+}
+hr {
+  margin: 0.5em;
 }
 
 .windChill {
