@@ -42,9 +42,10 @@ h1 {
 
 .cards {
     margin-left: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-    grid-gap: 1rem;
+     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 section img {

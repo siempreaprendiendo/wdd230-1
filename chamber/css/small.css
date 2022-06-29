@@ -436,7 +436,7 @@ form label.top input:required:valid {
   line-height: 0;
 }
 
-/* ---------------------------cards --------------------------------- */
+/* ----------------------- Directory ---------------------- */
 
 
 .members section {
@@ -451,15 +451,14 @@ form label.top input:required:valid {
 
 .members {
   margin-left: 1rem;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   
 }
 
-
-
-/* ----------- Directory ------------------ */
-.directoryGrid {
+.directoryGrid { 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

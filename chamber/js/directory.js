@@ -1,4 +1,5 @@
 const requestURL = "https://siempreaprendiendo.github.io/wdd230/chamber/json/data.json";
+
 const cards = document.querySelector('.members');
 
 
@@ -54,9 +55,9 @@ getDirectory("grid");
 
 // ----------buttons------------ 
 
-let gridbutton = document.querySelector("#grid");
-let listbutton = document.querySelector("#list");
-let display = document.querySelector(".members")
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
 
 gridbutton.addEventListener("click", () => {
   display.classList.add("grid");
