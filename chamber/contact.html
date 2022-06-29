@@ -39,12 +39,46 @@
             </nav>    
         </header>
     <div class="date"></div>
-    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-    <main>
-        <div class="thanks">
-            <h2>Thank You</h2>
-            <p>for joining our team!</p>
+    <main class="contact">
+        <div class="info">
+            <h3>Contact Information</h3>
+            <p>Artemisia Palace</p>
+            <p>11111 Moon Court</p>
+            <p>Artemisia, MN 98765</p>
+            <P>206-555-0001</P>
+            <h3>Hours</h3>
+            <p>Monday - Friday 10am - 5pm</p>
+            <p>Saturdays 10am - 12pm</p>
+            <h3>Chamber Leaders</h3>
+            <p><strong>Lihn Cinder</strong></p>
+            <p>President</p>
+            <P>cinder@gmail.com</P>
+            <p><strong>Winter Hale Blackburn</strong></p>
+            <p>Vice President</p>
+            <P>winterhb@gmail.com</P>
+            <p><strong>Crescentmoon Darnel</strong></p>
+            <p>Secretary</p>
+            <P>cresentmoon@gmail.com</P>
         </div>
+    
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Information Request Form</legend>
+                <label class="top">First Name* <input type="text" name="title" required></label>
+                <label class="top">Last Name* <input type="text" name="title" required></label>
+                <label class="top">E-mail* <input type="text" name="title" required></label>
+                <label class="top">Phone Number* <input type="text" name="title" required></label>
+                <label class="top"><p>Questions or Comments</p><textarea rows="4" cols="50" type="description" name="textarea" placeholder="Enter your text here..."></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Would you like to be put on our monthly newsletter mailing list?</legend>
+                <label class="sbs"><input type="radio" name="membership" value="np">Yes</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze">No</label>
+            </fieldset>
+            
+            <input type="submit" value="Contact Us!" name="joinButton" class="submitBtn">
+            <input type="hidden" value="Date Visited" id="dateVisited">
+        </form>       
     </main>
     <footer>
         <div id="businessInfo">

@@ -320,7 +320,7 @@ nav ul.open {display: block;}
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
-/* discover page css */
+/*------------------ discover page css -----------------*/
 
 #images {
   display: grid;
@@ -341,9 +341,9 @@ nav ul.open {display: block;}
   background: white;
 }
 
-/* ------------------ FORM -------------------- */
+/* ------------------ Join Page / Contact Page -------------------- */
 
-form, .membershipInfo {
+form, .membershipInfo, .info{
     max-width: 500px;
     margin: auto;
     background: white;
@@ -352,7 +352,12 @@ form, .membershipInfo {
 
 }
 
-.membershipInfo {
+.info {
+  padding: 2em;
+}
+
+
+.membershipInfo, .info{
   margin-bottom: 1em;
 }
 
@@ -454,8 +459,7 @@ form label.top input:required:valid {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  
+  justify-content: center; 
 }
 
 .directoryGrid { 

@@ -1,7 +1,8 @@
 {
     "members": [
       {
-        "name": "Lihn Cinder",
+        "name": "Lihn",
+        "lastName": "Cinder",
         "businessName": "Cyborg Mechanics",
         "address": "12345 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-7305",
@@ -10,7 +11,8 @@
         "logo": "gear2.webp"
       },
       {
-        "name": "Crescentmoon Darnel",
+        "name": "Crescentmoon",
+        "lastName": "Darnel",
         "businessName": "Cresent Moon Electronics",
         "address": "23456 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-7181",
@@ -19,7 +21,8 @@
         "logo": "circuit.webp"
       },
       {
-        "name": "Winter Hale Blackburn",
+        "name": "Winter",
+        "lastName": "Hale Blackburn",
         "businessName": "Winter's Sweet Shop",
         "address": "34567 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-1310",
@@ -28,7 +31,8 @@
         "logo": "candy.webp"
       },
       {
-        "name": "Dmitri Erland",
+        "name": "Dmitri",
+        "lastName": "Erland",
         "businessName": "Erland R & D",
         "address": "45678 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-9251",
@@ -37,7 +41,8 @@
         "logo": "research.webp"
       },
       {
-        "name": "Scarlet Benoit",
+        "name": "Scarlet",
+        "lastName": "Benoit",
         "businessName": "Benoit Farms",
         "address": "56789 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-8171",
@@ -46,7 +51,8 @@
         "logo": "farm.webp"
       },
       {
-        "name": "Iko Garan ",
+        "name": "Iko",
+        "lastName": "Garan",
         "businessName": "Iko Fashion",
         "address": "23451 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-0121",
@@ -55,7 +61,8 @@
         "logo": "fashion.webp"
       },
       {
-        "name": "Emily Monfort",
+        "name": "Emily",
+        "lastName": "Monfort",
         "businessName": "Rieux Tavern",
         "address": "34512 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-0104",
@@ -64,7 +71,8 @@
         "logo": "tavern.webp"
       },
       {
-        "name": "Carswell Thorne",
+        "name": "Carswell",
+        "lastName": "Thorne",
         "businessName": "Thorne Delivery",
         "address": "45123 Moon drive, Artemisia, MN 98765",
         "phone": "206-555-8359",
@@ -73,7 +81,8 @@
         "logo": "spaceship.webp"
       },
       {
-        "name": "Jacin Clay",
+        "name": "Jacin",
+        "lastName": "Clay",
         "businessName": "Clay Medical Clinic",
         "address": "12345 Moon drive, Artemisia, MN 98765",
         "phone":"206-555-7810",

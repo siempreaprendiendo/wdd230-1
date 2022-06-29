@@ -156,6 +156,10 @@
         opacity: 1;
       }
         
+/* ----------- Contact Page ---------------- */
 
+.info {
+  min-width: 55vh;
+}
 
 }
