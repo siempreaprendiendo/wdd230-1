@@ -343,12 +343,21 @@ nav ul.open {display: block;}
 
 /* ------------------ FORM -------------------- */
 
-form {
+form, .membershipInfo {
     max-width: 500px;
     margin: auto;
     background: white;
     padding: 10px;
     border-radius: 2%;
+
+}
+
+.membershipInfo {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style-type: none;
 }
 
 form fieldset {
@@ -434,38 +443,30 @@ form label.top input:required:valid {
   margin: 1rem;
 }
 
-.cards section {
+.members section {
   border: 1px solid black;
   background-color: white;
   padding: .5rem;
 }
 
-.cards {
+.members {
   margin-left: 1rem;
   display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-  grid-gap: 1rem;
-}
-
-@media (max-width: 29.3rem) {
-.cards {
-  display: block;
-}
+  flex-wrap: wrap;
   
-  .cards section {
-      margin: .2rem;
-  }
 }
 
+
+
+/* ----------- Directory ------------------ */
+.directoryGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
 /* ----------- Buttons ------------------ */
 
-/******************DIRECTORY PAGE**********************/
 
-#dirtitle {
-  text-align: center;
-  margin: 20px 0px 10px 0px;
-  padding: 10px;
-}
 
 .gridListBtns {
   text-align: center;
@@ -479,29 +480,7 @@ form label.top input:required:valid {
   box-shadow: 3px 3px 10px gray;
 }
 
-.groups div {
-  background-color: #ffffff;
-  border: 1px solid #32292f;
-  box-shadow: 3px 3px 10px rgb(54, 54, 54);    
 
-  text-align: center;
-  align-items: center;
-  margin: 10px;
-  padding: 10px 10px 20px 10px;
-}
-
-.groups img {
-  border: none;
-  box-shadow: none;
-  height: 100px;
-  width: 150px;
-}
-
-.groups h2 {
-  color: #000000;
-  font-family: Lato, sans-serif;
-  font-size: 22px;
-}
 
 
 /********* List Styling************/
@@ -521,14 +500,6 @@ div.groups.list {
 
 /********* Grid Styling************/
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
 
-.grid div {
-  text-align: center;
-  align-items: center;
-  margin: 10px;
-  padding: 10px 20px 20px 20px;
-}
+
+

@@ -8,7 +8,7 @@ async function getDirectory() {
     let response = await fetch(requestURL);
     if (response.ok) {
         let data = await response.json();
-        console.log(data);
+        // console.log(data);
         buildCards(data);
 
     } else {
@@ -56,7 +56,7 @@ getDirectory("grid");
 
 let gridbutton = document.querySelector("#grid");
 let listbutton = document.querySelector("#list");
-let display = document.querySelector(".members.")
+let display = document.querySelector(".members")
 
 gridbutton.addEventListener("click", () => {
   display.classList.add("grid");

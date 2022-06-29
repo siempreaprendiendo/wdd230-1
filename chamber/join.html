@@ -40,6 +40,26 @@
         </header>
     <div class="date"></div>
     <main class="joinForm">
+        <div class="membershipInfo">
+            <ul>
+                <li>
+                    <h3>Gold Membership: $1500/year</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nihil repellendus suscipit adipisci minima perferendis consectetur omnis, magni cupiditate debitis consequuntur eos. Cumque perferendis recusandae velit harum distinctio fuga voluptatem!</p>    
+                </li>
+                <li>
+                    <h3>Silver Membership: $1000/year</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nihil repellendus suscipit adipisci minima perferendis consectetur omnis, magni cupiditate debitis consequuntur eos. Cumque perferendis recusandae velit harum distinctio fuga voluptatem!</p>    
+                </li>
+                <li>
+                    <h3>bronzeMembership: $500/year</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nihil repellendus suscipit adipisci minima perferendis consectetur omnis, magni cupiditate debitis consequuntur eos. Cumque perferendis recusandae velit harum distinctio fuga voluptatem!</p>    
+                </li>
+                <li>
+                    <h3>Non-Prophet Membership: Free</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nihil repellendus suscipit adipisci minima perferendis consectetur omnis, magni cupiditate debitis consequuntur eos. Cumque perferendis recusandae velit harum distinctio fuga voluptatem!</p>    
+                </li>
+            </ul>
+        </div>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Applicant Information</legend>
@@ -52,15 +72,15 @@
                 <legend>Business Information</legend>
                 <label class="top">Business Name* <input type="text" name="title" required></label>
                 <label class="top">Business Possition Title <input type="text" name="title" ></label>
-                <label class="top">Business Description <textarea rows="4" cols="50" type="description" name="textarea" placeholder="Enter your text here..."></textarea></label>
+                <label class="top"><p>Business Description</p><textarea rows="4" cols="50" type="description" name="textarea" placeholder="Enter your text here..."></textarea></label>
             </fieldset>
             <fieldset>
                 <legend>Course Information</legend>
                 <div>Audience</div>
-                <label class="sbs"><input type="radio" name="membership" value="np">NP Membership is for non profit organizations and there is no fee</label>
-                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership $50</label>
-                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership $100</label>
-                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership $150</label>
+                <label class="sbs"><input type="radio" name="membership" value="np">NP Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership $500</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership $1000</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership $1500</label>
             </fieldset>
             
             <input type="submit" value="Join Now" name="joinButton" class="submitBtn">

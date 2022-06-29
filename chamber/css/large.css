@@ -93,11 +93,19 @@
       }
 
       /* ------------------ FORM -------------------- */
+  .joinForm {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+
 
   form {
     min-width: 600px;
     padding: 2em;
   }
+
 
 
       
