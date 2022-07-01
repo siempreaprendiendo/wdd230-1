@@ -1,8 +1,5 @@
 const requestURL = "https://siempreaprendiendo.github.io/wdd230/chamber/json/data.json";
-
 const cards = document.querySelector('.members');
-
-
 
 async function getDirectory() {
 
@@ -29,7 +26,7 @@ function buildCards(data) {
         let mblv = document.createElement('p');
         
 
-        name.innerHTML = `${member.name} ${member.lastname}`;
+        name.innerHTML = `${member.name} ${member.lastName}`;
         bname.innerHTML = `<strong>${member.businessName}</storng>`;
         address.innerHTML = `Adress: ${member.address}`;
         phn.innerHTML = `Phone #: ${member.phone}`;
@@ -51,23 +48,24 @@ function buildCards(data) {
     });
 }
 
-getDirectory("grid");
+getDirectory();
 
 // ----------buttons------------ 
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
+const display = document.querySelector(".members")
 
 
 gridbutton.addEventListener("click", () => {
-  display.classList.add("grid");
-  display.classList.remove("list");
+  display.classList.add("gridview");
+  display.classList.remove("listview");
 });
 
 listbutton.addEventListener("click", showList);
 
 function showList() {
-  display.classList.add("list");
-  display.classList.remove("grid");
+  display.classList.add("listview");
+  display.classList.remove("gridview");
 }
 

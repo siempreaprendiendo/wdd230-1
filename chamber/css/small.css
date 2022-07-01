@@ -467,15 +467,22 @@ form label.top input:required:valid {
   flex-direction: row;
   flex-wrap: wrap;
 } 
+/* ------------- List View ------------ */
+#listview {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 /* ----------- Buttons ------------------ */
 
 
-
-.gridListBtns {
-  text-align: center;
+.btn:hover {
+  color: #2f2259;
+  background-image: radial-gradient(white, #d1c9f8, #990aff);
+  border-radius: 5pt;
 }
 
-#grid, #list {
+.btn {
   padding: 15px 40px;
   margin: 10px;
   background: white;
@@ -486,22 +493,6 @@ form label.top input:required:valid {
 
 
 
-/********* List Styling************/
-div.groups.list {
-  display: grid;
-}
-
-.list div {
-  padding: 15px;
-  margin: 10px;
-}
-
-.list div img {
-  display: none;
-}
-
-
-/********* Grid Styling************/
 
 
 
