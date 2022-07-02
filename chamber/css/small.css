@@ -133,9 +133,7 @@ main {
   opacity: 0.8;
 }
 
-#weather {
-  
-}
+
 
 #weather div {
   position: absolute;
@@ -466,6 +464,7 @@ form label.top input:required:valid {
 /* ----------------------- Directory ---------------------- */
 
 
+
 .members section {
   border: 1px solid black;
   background-color: white;
@@ -487,10 +486,40 @@ form label.top input:required:valid {
   flex-wrap: wrap;
 } 
 /* ------------- List View ------------ */
-#listview {
-  display: grid;
-  grid-template-columns: 1fr;
+
+.list {
+	display: flex;
+	flex-direction: column;
 }
+
+.list section {
+	display: flex;
+	align-items: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 1rem;
+	text-align: left;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
 
 /* ----------- Buttons ------------------ */
 
