@@ -58,14 +58,14 @@ const display = document.querySelector(".members")
 
 
 gridbutton.addEventListener("click", () => {
-  display.classList.add("gridview");
-  display.classList.remove("listview");
+  display.classList.remove("list");
+  display.classList.add("members")
 });
 
 listbutton.addEventListener("click", showList);
 
 function showList() {
-  display.classList.add("listview");
-  display.classList.remove("gridview");
+  display.classList.add("list");
+  display.classList.remove("members")
 }
 
