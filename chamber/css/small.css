@@ -131,26 +131,21 @@ main {
 
 
 
-#weather div {
+#weather {
   background-color: skyblue;
-  border: 1px solid black;
-  border-radius: 10px;
 }
 
 #weather h3 {
-  position: absolute;
-  top:2%;
-  left: 10%;
-  width: 100%;
+  
+  padding: 1em;
   font-size: 30px;
   font-family: 'Parisienne', cursive;
   color: black;
 }
 
 #weather p {
-  position: absolute;
   padding: 0.5em 0 0  0 ;
-  top: 65%;
+
   font-weight: bold;
 }
 
@@ -160,8 +155,7 @@ hr {
 }
 
 .windChill {
-  position: absolute;
-  bottom: 10%;
+
 }
 
 .input label {
