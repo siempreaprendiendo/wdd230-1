@@ -1,1 +1,2 @@
-let visitDate = new Date()
+
+document.querySelector("#dateVisited").value = new Date();

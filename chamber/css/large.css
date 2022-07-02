@@ -47,6 +47,11 @@
   #weather {
     grid-area: 3/1/4/2;
   }
+
+  #weather p {
+    top: 50%;
+  
+  }
   
   #join {
         grid-area: 2/1/3/2;
@@ -55,9 +60,10 @@
         display: grid;
       }
 
-      .spotlight3 {
+      #spotlights section:nth-child(3) {
         display: block;
       }
+      
 
       header {
         display: grid;
@@ -93,7 +99,7 @@
       }
 
       /* ------------------ FORM -------------------- */
-  .joinForm, .contact{
+  .joinForm, .contact, #thankyou{
     display: flex;
     flex-direction: column;
     align-content: center;

@@ -27,9 +27,6 @@ main {
   margin: 1.5em auto;
 }
 
-#homePage p {
-  padding: 2em;
-}
 
 .social img {
   max-width: 30px;
@@ -39,10 +36,6 @@ main {
 #siteName, #newRelease, #event, #weather {
   padding: 0;
   position: relative;
-}
-
-#siteName {
-  background-color: black;
 }
 
 #siteName h3{
@@ -75,6 +68,7 @@ main {
   background: rgba(153, 10, 255, 0.2);
 }
 
+
 #newRelease h3 {
   position: absolute;
   top: 10%;
@@ -91,6 +85,7 @@ main {
   font-size: 24px;
   color: black;
   object-fit: contain;
+  padding: 2em;
 }
 
 #newRelease img {
@@ -100,7 +95,7 @@ main {
   opacity: 0.2;
 }
 
-#event {
+#event, #siteName {
   background-color: black;
 }
 
@@ -121,6 +116,7 @@ main {
   font-size: 18px;
   color: white;
   object-fit: contain;
+  padding: 2em;
 }
 
 #event img {
@@ -136,20 +132,14 @@ main {
 
 
 #weather div {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  align-content: center;
-  width: 80%;
-  display: flex;
-  font-size: 15pt;
-  padding: .5rem;
+  background-color: skyblue;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 #weather h3 {
   position: absolute;
-  top:10%;
+  top:2%;
   left: 10%;
   width: 100%;
   font-size: 30px;
@@ -158,18 +148,12 @@ main {
 }
 
 #weather p {
-  position: relative;
+  position: absolute;
   padding: 0.5em 0 0  0 ;
+  top: 65%;
+  font-weight: bold;
 }
 
-#weather img {
-  display: block;
-  width:100%;
-  height: auto;
-  object-fit: contain;
-  padding: 0;
-  border-radius: 10px;
-}
 
 hr {
   margin: 0.5em;
@@ -188,26 +172,17 @@ hr {
   
 }
 
-.spotlight {
-  background-color: #d1c9f8;
-  border: 1px solid black;
+#spotlights img {
+  width: 100%;
+  height: auto;
+  float: center;
+  border-radius: 100%;
 }
 
-.spotlight3 {
+#spotlights section:nth-child(3) {
   display: none;
 }
 
-.spotlight h3 {
-  padding: 1em;
-}
-
-#spotlights img {
-  width: 50%;
-  height: auto;
-  float: right;
-  border-radius: 100%;
-  padding: 1em;
-}
 
 #banner {
   display: none;
@@ -224,6 +199,10 @@ hr {
   background-color: black;
 }
 
+#join p {
+  padding: 2em;
+}
+
 h1 {
     font-size: 30pt;
     font-family:'Parisienne', cursive;
@@ -231,6 +210,7 @@ h1 {
 
 h2 {
     font-family:'Ubuntu', sans-serif;
+    padding: 0.5em;
 }
 
 h4 {
@@ -251,6 +231,7 @@ header, footer {
 
 header {
   display: flex;
+  align-items: center;
   justify-content: space-around;
 
 }
@@ -473,8 +454,8 @@ form label.top input:required:valid {
 }
 
 .members {
+  min-width: 20px;
   margin-left: 1rem;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
@@ -487,17 +468,9 @@ form label.top input:required:valid {
 } 
 /* ------------- List View ------------ */
 
-.list {
-	display: flex;
-	flex-direction: column;
-}
-
 .list section {
 	display: flex;
 	align-items: center;
-}
-
-.list section {
 	flex-direction: row;
 	justify-content: left;
 }
@@ -508,7 +481,7 @@ form label.top input:required:valid {
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none;
 }
 
 
