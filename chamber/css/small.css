@@ -497,15 +497,6 @@ form label.top input:required:valid {
 	align-items: center;
 }
 
-.grid section {
-	flex-direction: column;
-	text-align: center;
-}
-
-.grid section > * {
-	margin: 0.1rem;
-}
-
 .list section {
 	flex-direction: row;
 	justify-content: left;
