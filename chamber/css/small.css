@@ -129,12 +129,12 @@ main {
   opacity: 0.8;
 }
 
-
-
 #weather {
-  background-color: skyblue;
+  background-color: rgb(212, 238, 248);
 }
-
+#weather div {
+  padding: 1.5em;
+}
 #weather h3 {
   
   padding: 1em;
@@ -152,10 +152,6 @@ main {
 
 hr {
   margin: 0.5em;
-}
-
-.windChill {
-
 }
 
 .input label {
@@ -316,16 +312,23 @@ nav ul.open {display: block;}
 }
 
 #images section {
+  display: flex;
+  flex-direction: column;
   padding: 25px 50px;
   margin: 2em;
   background-color: #2f2259;
   color: white;
+  justify-content: center;
 }
 
-#images picture {
+#images figure {
   border: 1em solid white;
   box-shadow: 5px 5px 5px #999;
   background: white;
+}
+
+#images h3 {
+  padding: 1em;
 }
 
 /* ------------------ Join Page / Contact Page -------------------- */
