@@ -165,7 +165,6 @@ hr {
 #spotlights img {
   width: 100%;
   height: auto;
-  float: center;
   border-radius: 100%;
 }
 
@@ -382,7 +381,6 @@ form label.top, form div {
 }
 
 form label.top input, form label.top select {
-  -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: solid 1px #999;
