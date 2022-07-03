@@ -232,6 +232,10 @@ header img {
   border-radius: 100%;
 }
 
+footer a {
+  color: white;
+}
+
 .heading {
   display: flex;
   flex-direction: column;
@@ -286,6 +290,8 @@ nav ul li a {
   color: white; 
   font-size: 26px;  
 }
+
+
 
 nav ul li.active a {
   background-color: rgba(0, 0, 0, 0.2);
