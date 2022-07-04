@@ -377,7 +377,6 @@ form label.top, form div {
   display: block;
   padding-top: 1rem;
   color: indigo;
-  font-size: .8rem;
 }
 
 form label.top input, form label.top select {
