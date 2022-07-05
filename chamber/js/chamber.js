@@ -1,7 +1,5 @@
-let modDate = document.lastModified
-
 document.getElementById("dateMod").innerHTML = `Last Modified: ${document.lastModified}`;
-document.getElementById("year").innerText = year;
+document.getElementById("year").innerText = new Date().getFullYear();
 
 // Hamburger button javascript
 
@@ -15,10 +13,13 @@ x.onclick = toggleMenu;
 
 // -------------- Date --------------
 const datefield = document.querySelector(".date");
-
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
 );
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
+
+
+
+
