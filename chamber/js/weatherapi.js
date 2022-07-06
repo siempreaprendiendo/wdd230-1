@@ -20,22 +20,22 @@ async function apiFetch(apiURL) {
         } 
     } 
 
+    //---------------- Windchill --------------------//
+
 function displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong> ${weatherData.main.temp.toFixed(1)}</strong>`;
-
-
-// ---------------- Windchill --------------------//
-
+    currentTemp.innerHTML = weatherData.main.temp.toFixed(1);
     const imagesrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
     weatherIcon.setAttribute('src', imagesrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.innerHTML = desc;
+    windspeed.innerHTML = weatherData.wind.speed;
 
-    windspeed.innerHTML = `Wind Speed: ${weatherData.wind.speed}`;
+    let temp = weatherData.main.temp;
+    let speed = weatherData.wind.speed;
 
-    if (currentTemp <= 50 && windspeed > 3.0) {
-        windchill.innerHTML = `${35.74 + 0.6215 * currentTemp - 35.75 * windspeed ** 0.16}`;
+if (temp <= 50 && speed > 3.0) {
+        windchill.innerHTML = `${(35.74 + 0.6215 * temp - 35.75 * speed ** 0.16).toFixed(1)}`;
     } else {
         windchill.innerHTML = `N/A`;
     };
