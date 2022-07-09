@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+}
+
+
 html {
     background-color: #f7eede;
 }
@@ -21,6 +26,21 @@ header {
     margin: 0 auto;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebcac1;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    padding: 0.05em;
+}
 
 header img.logo {
     width: 12%;
@@ -29,12 +49,26 @@ header img.logo {
     min-width: 45px;
 }
 
-
 header h1 {
     font-family: 'Berkshire Swash', cursive;
     font-size: 5vw;
     flex-basis: 100%;
+}
 
+footer h2 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 12pt;
+    flex-basis: 100%;
+    padding: 0.35em;
+}
+
+footer img.logo {
+    width: 40px;
+    height: auto;
+}
+
+div {
+    padding: 0.5em;
 }
 
 .social {
@@ -49,6 +83,8 @@ header h1 {
     max-height: auto;
     min-width: 20px;
 }
+
+
 
   /* ----Hamburger Button */
 

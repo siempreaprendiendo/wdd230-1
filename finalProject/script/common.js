@@ -1,3 +1,6 @@
+
+// ----------Hamburger Button-------------
+
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById('hamburgerBtn').classList.toggle("open");
@@ -5,3 +8,8 @@ function toggleMenu() {
 
 const x = document.getElementById('hamburgerBtn') 
 x.onclick = toggleMenu;
+
+
+// --------------Mod Date---------------
+
+document.getElementById("dateMod").innerHTML = `Last Modified: ${document.lastModified}`;
