@@ -132,7 +132,7 @@
         grid-area: 6/2/7/3;
       }
 
-      picture {
+      figure {
         position: relative;
         width: 100%;
       }
@@ -140,9 +140,7 @@
       .overlay {
         position: absolute; 
         bottom: 0; 
-        background: rgb(0, 0, 0);
-        background: rgba(47, 34, 89, 0.5);
-        color: #f1f1f1; 
+        background: rgba(47, 34, 89, 0.5); 
         width: 100%;
         transition: .5s ease;
         opacity:0;
@@ -152,7 +150,7 @@
         text-align: center;
       }
 
-      picture:hover .overlay {
+      figure:hover .overlay {
         opacity: 1;
       }
         

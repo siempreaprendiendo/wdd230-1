@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 
@@ -8,11 +9,23 @@ html {
 }
 
 body {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0;
+
+}
+h1, h2, h3 {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+p {
+    padding: 1em;
+    font-family: 'Inter', sans-serif;
+    color: #0e2207;
 }
 
 /* ---Colors--- */
-/* Text: #0e2207  Main: ebcac1 Accent: cbdfbd Background: f7eede*/
+/* Text: #0e2207  Main: #ebcac1 Accent: #cbdfbd Background: #f7eede*/
 
 /* -----------Header/Footer------------- */
 header {
@@ -35,6 +48,7 @@ footer {
     width: 100%;
     padding: 0.5em;
     margin: 0 auto;
+    color:#0e2207
 }
 
 footer p {
@@ -43,20 +57,18 @@ footer p {
 }
 
 header img.logo {
-    width: 12%;
+    width: 20%;
     height: auto;
     padding: 0.5em 0.5em 0.5em 1.5em;
     min-width: 45px;
 }
 
 header h1 {
-    font-family: 'Berkshire Swash', cursive;
     font-size: 5vw;
     flex-basis: 100%;
 }
 
 footer h2 {
-    font-family: 'Berkshire Swash', cursive;
     font-size: 12pt;
     flex-basis: 100%;
     padding: 0.35em;
@@ -65,10 +77,6 @@ footer h2 {
 footer img.logo {
     width: 40px;
     height: auto;
-}
-
-div {
-    padding: 0.5em;
 }
 
 .social {
@@ -88,6 +96,8 @@ div {
 
   /* ----Hamburger Button */
 
+        /* button */
+
   nav button {
     background-color: transparent;
     border: none;
@@ -96,6 +106,63 @@ div {
     align-self: center;
     padding-right: 1em;
   }
+
+  .menuBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+
+  .menuBtn-burger {
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #0e2207;
+    transition: all .5s ease-in-out;
+  }
+
+  .menuBtn::before, .menuBtn::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #0e2207;
+    transition: all .5s ease-in-out;
+  }
+
+  .menuBtn::before {
+    transform: translateY(-10px);
+  }
+  .menuBtn::after {
+    transform: translateY(10px);
+  }
+
+        /* menu Animation*/
+
+  .menuBtn.open .menuBtn-burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .menuBtn.open .menuBtn-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .menuBtn.open .menuBtn-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+
+        /* menu */
   
   nav ul{
     padding: 1em;
@@ -107,9 +174,7 @@ div {
   
   a:link { text-decoration: none; }
   nav a:hover {
-    color: #2f2259;
-    background-image: radial-gradient(white, #d1c9f8, #990aff);
-    border-radius: 10pt;
+    color: white;
   }
   
   nav ul li a {
@@ -132,3 +197,46 @@ div {
   #hamburgerBtn.open span:nth-child(1) {display: none;}
   #hamburgerBtn.open span:nth-child(2) {display: block;}
 
+  /* -------------Homepage---------------- */
+
+.templeSummary h2 {
+    text-align: center;
+}
+
+.templeSummary figure img {
+    width: 80%;
+    height: auto;
+    border-radius: 20%;
+    box-shadow: 5px 5px 5px #0e2207;
+}
+
+        /* image hover caption */
+
+figure {
+    padding: 2em;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .overlay {
+    position: absolute; 
+    bottom: 50px; 
+    background: rgb(203, 223, 189, 0.75) ;
+    color: rgb(14, 34, 7); 
+    width: 90%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 20px;
+    font-family: 'Berkshire Swash', cursive;
+    padding: 20px;
+  }
+
+  figure:hover .overlay {
+    opacity: 1;
+  }
+
+  .cta img {
+    width: 100%;
+    height: auto;
+  }
