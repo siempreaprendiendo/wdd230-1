@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -22,6 +23,10 @@ p {
     padding: 1em;
     font-family: 'Inter', sans-serif;
     color: #0e2207;
+}
+
+a {
+  color: #0e2207
 }
 
 /* ---Colors--- */
@@ -57,8 +62,6 @@ footer p {
 }
 
 header img.logo {
-    width: 20%;
-    height: auto;
     padding: 0.5em 0.5em 0.5em 1.5em;
     min-width: 45px;
 }
@@ -88,8 +91,7 @@ footer img.logo {
 
 .social img {
     max-width: 35%;
-    max-height: auto;
-    min-width: 20px;
+    min-width: 30px;
 }
 
 
@@ -97,15 +99,6 @@ footer img.logo {
   /* ----Hamburger Button */
 
         /* button */
-
-  nav button {
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    align-self: center;
-    padding-right: 1em;
-  }
 
   .menuBtn {
     position: relative;
@@ -127,7 +120,7 @@ footer img.logo {
     transition: all .5s ease-in-out;
   }
 
-  .menuBtn::before, .menuBtn::after {
+  .menuBtn-burger::before, .menuBtn-burger::after {
     content: '';
     position: absolute;
     width: 30px;
@@ -138,10 +131,10 @@ footer img.logo {
     transition: all .5s ease-in-out;
   }
 
-  .menuBtn::before {
+  .menuBtn-burger::before {
     transform: translateY(-10px);
   }
-  .menuBtn::after {
+  .menuBtn-burger::after {
     transform: translateY(10px);
   }
 
@@ -155,10 +148,14 @@ footer img.logo {
 
   .menuBtn.open .menuBtn-burger::before {
     transform: rotate(45deg) translate(35px, -35px);
+    box-shadow: none;
+    background: #0e2207;
   }
 
   .menuBtn.open .menuBtn-burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
+    box-shadow: none;
+    background: #0e2207;
   }
 
 
@@ -166,10 +163,10 @@ footer img.logo {
   
   nav ul{
     padding: 1em;
-    margin: .5em;
     list-style: none;
-    background-color: #cbdfbd; 
+    background-color: rgb(203, 223, 189, 0.75); 
     font-family: 'Berkshire Swash', cursive;
+    text-align: center;
   }
   
   a:link { text-decoration: none; }
@@ -178,32 +175,29 @@ footer img.logo {
   }
   
   nav ul li a {
-    display: block;
     color: #0e2207; 
-    font-size: 26px; 
+    font-size: 18px; 
   }
 
-  nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #0e2207;
-  }
+ 
   
   nav ul {display: none;}
-  nav ul.open {display: block;}
+  nav ul.open {
+    display: block;
+    width: 100%;
+  }
+
+
     
-  #hamburgerBtn span:nth-child(1) {display: block;}
-  #hamburgerBtn span:nth-child(2) {display: none;}
-  
-  #hamburgerBtn.open span:nth-child(1) {display: none;}
-  #hamburgerBtn.open span:nth-child(2) {display: block;}
+
 
   /* -------------Homepage---------------- */
 
-.templeSummary h2 {
+h2 {
     text-align: center;
 }
 
-.templeSummary figure img {
+.hero img {
     width: 80%;
     height: auto;
     border-radius: 10%;
@@ -213,30 +207,87 @@ footer img.logo {
         /* image hover caption */
 
 figure {
-    padding: 2em;
-    position: relative;
-    width: 100%;
-    text-align: center;
-  }
+  display: flex;
+  padding: 2em;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 
   .overlay {
     position: absolute; 
-    bottom: 50px; 
+    bottom: 65px; 
     background: rgb(203, 223, 189, 0.75) ;
     color: rgb(14, 34, 7); 
-    width: 90%;
+    width: 70%;
     transition: .5s ease;
     opacity:0;
     font-size: 20px;
     font-family: 'Berkshire Swash', cursive;
-    padding: 20px;
+    padding: 5px;
+    text-align: center;
   }
 
   figure:hover .overlay {
     opacity: 1;
   }
 
+        /* Call to Action */
+
   .cta img {
     width: 100%;
     height: auto;
   }
+
+  .cta {
+    position: relative;
+  }
+
+  .cta a {
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    font-size: 12pt;
+    color: #0e2207;
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 15pt;
+    background: rgba(203, 223, 189, 0.75);
+  }
+
+      /* Weather */
+
+  #currWeather, #threeDayForcast {
+   display: flex;
+   flex-direction: column; 
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   border: 1px solid black;
+   border-radius: 1em;
+   margin: 1em;
+   text-align: center;
+   padding: 0.5em;
+  }
+
+  .fcBlock {    
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1em;
+    margin: 0.5em;
+    width: 100%;
+    height: auto;
+  }
+
+  #currWeather figure {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .today {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1.5em;
+  }
+

@@ -1,0 +1,66 @@
+/* 64em is also 1028px when baefont is 16px */
+@media only screen and (min-width: 64rem) {
+    /* ----Menu---- */
+    
+  
+    .menuBtn {display: none;}
+
+    #primaryNav {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+          
+    nav ul li a {
+      padding: .5rem 1rem;
+      font-size: 20pt; 
+    }
+    
+    main {
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      gap: 0em;
+    }
+
+    /* ------header------- */
+
+    header {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+        padding-bottom: 0;
+        flex-grow: initial;
+    }
+
+    #primaryNav {
+        flex-basis: 100%;
+        margin: 0 auto;
+    }
+
+    header img.logo {
+        width: 10%;
+        flex-basis: 15%;
+    }
+
+    header h1 {
+        width: 80%;
+        flex-basis: 70%;
+    }
+
+    .social {
+        flex-basis: 15%;
+    
+    }
+
+  /* Weather */
+
+  #threeDayForcast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    padding-bottom: 1em;
+  }
+
+
+
+}

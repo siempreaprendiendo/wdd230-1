@@ -24,35 +24,68 @@
             <a href="https://www.facebook.com/LDS-Temples-202725056444066" target="_blank"><img src="images/facebook.webp" alt="facebook"></a>
             <a href="https://www.instagram.com/churchofjesuschrist/" target="_blank"><img src="images/instagram.webp" alt="instagram"></a>
         </div>
-        <nav>
-            <button>
-                <div class="menuBtn">
-                    <div class="menuBtn-burger"></div>
-                </div>
-            </button>
-            <ul id="primaryNav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="temples.html">Temples</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>   
-        
+        <div class="menuBtn">
+            <div class="menuBtn-burger"></div>
+        </div>       
     </header>
+    <nav>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>  
     <main id="home">
-        <div class="templeSummary">
+        
+        <figure class="hero">
+            <img src="images/mantiTempleHome.webp" loading="lazy" alt="Manti Temple">
+            <figcaption class="overlay">Manti Utah Temple</figcaption>
+        </figure>
+        <h2>Manti Temple</h2>
+        <p>The Manti Utah Temple is the fifth constructed temple of The Church of Jesus Christ of Latter-day Saints. Located in the city of Manti, Utah, it was the third Latter-day Saint temple built west of the Mississippi River, after the Mormons' trek westward. (The St. George and Logan Utah temples preceded it.) The Manti Temple was designed by William Harrison Folsom, who moved to Manti while the temple was under construction. The temple dominates the Sanpete Valley, and can be seen from many miles. Like all Latter-day Saint temples, only church members in good standing may enter. It is one of only two remaining Latter-day Saint temples in the world where live actors are used in the endowment ceremonies (the other is the Salt Lake Temple); all other temples use films in the presentation of the endowment, a practice that will end following renovations announced in 2021. It is an early pioneering example of four rooms representing the journey of life. <a href="resources.html">(1)</a></p>
+        <div id="currWeather">
+            <div class="today"></div>
+            <p><strong><span id="current-temp"></span> &deg;F</strong></p>
             <figure>
-                <img src="images/mantiTempleHome.webp" loading="lazy" alt="Manti Temple">
-                <figcaption class="overlay">Manti Utah Temple</figcaption>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption id="weatherCap"></figcaption>
             </figure>
-            <h2>Manti Temple</h2>
-            <p>The Manti Utah Temple is the fifth constructed temple of The Church of Jesus Christ of Latter-day Saints. Located in the city of Manti, Utah, it was the third Latter-day Saint temple built west of the Mississippi River, after the Mormons' trek westward. (The St. George and Logan Utah temples preceded it.) The Manti Temple was designed by William Harrison Folsom, who moved to Manti while the temple was under construction. The temple dominates the Sanpete Valley, and can be seen from many miles. Like all Latter-day Saint temples, only church members in good standing may enter. It is one of only two remaining Latter-day Saint temples in the world where live actors are used in the endowment ceremonies (the other is the Salt Lake Temple); all other temples use films in the presentation of the endowment, a practice that will end following renovations announced in 2021. It is an early pioneering example of four rooms representing the journey of life.</p>
+        </div>
+        <div id="threeDayForcast">
+            <h2>Three Day Forcast</h2>
+            <div class="forcast1 fcBlock">
+                <div class="day1"></div>
+                <figure>
+                    <img src="" alt="" id="w-icon1">
+                    <figcaption class="futTemp1"> &deg;F</figcaption>
+                </figure>
+            </div>
+            <div class="forcast2 fcBlock">
+                <div class="day2"></div>
+                <figure>
+                    <img src="" alt="" id="w-icon2">
+                    <figcaption class="futTemp2"> &deg;F</figcaption>
+                </figure>
+            </div>
+            <div class="forcast3 fcBlock">
+                <div class="day3"></div>
+                <figure>
+                    <img src="" alt="" id="w-icon3">
+                    <figcaption class="futTemp3"> &deg;F</figcaption>
+                </figure>
+            </div>
         </div>
         <div class="cta">
+        
             <img src="images/lobbyPano.webp" loading="lazy" alt="Hotel Lobby">
-            
+            <div>
+                <h2><a href="reservations.html">Make Your Reservation Today</a></h2>
+            </div>
         </div>
+
+
     </main>
     <footer>
         <img class="logo" src="images/logo.webp" alt="Logo">
@@ -61,6 +94,7 @@
         <p><a href="resources.html">Resources</a> | <a href="contact.html">Contact Us</a> | <a href="ser">Services</a></p>
         <div id="dateMod"></div>
     </footer>
-    <script src="script/common.js" defer></script>  
+    <script src="js/main.js" defer></script> 
+    <script src="js/weather.js" defer></script> 
 </body>
 </html> 

@@ -13,14 +13,12 @@ async function apiFetch(apiURL) {
         const response = await fetch(apiURL);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data); // temp //
+            console.log(data); // temp //
             displayResults(data)
         } else {
             throw Error(await response.text());
         } 
     } 
-
-    //---------------- Windchill --------------------//
 
 function displayResults(weatherData) {
     currentTemp.innerHTML = weatherData.main.temp.toFixed(1);
@@ -31,14 +29,16 @@ function displayResults(weatherData) {
     captionDesc.innerHTML = desc;
     windspeed.innerHTML = weatherData.wind.speed;
 
-    let temp = weatherData.main.temp;
-    let speed = weatherData.wind.speed;
+   //---------------- Windchill --------------------//
 
-if (temp <= 50 && speed > 3.0) {
-        windchill.innerHTML = `${(35.74 + 0.6215 * temp - 35.75 * speed ** 0.16).toFixed(1)}`;
-    } else {
-        windchill.innerHTML = `N/A`;
-    };
+//     let temp = weatherData.main.temp;
+//     let speed = weatherData.wind.speed;
+
+// if (temp <= 50 && speed > 3.0) {
+//         windchill.innerHTML = `${(35.74 + 0.6215 * temp - 35.75 * speed ** 0.16).toFixed(1)}`;
+//     } else {
+//         windchill.innerHTML = `N/A`;
+//     };
 
 }
 
