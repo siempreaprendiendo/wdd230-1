@@ -302,14 +302,18 @@ figure {
 
 .templeCards {
   min-width: 20px;
-  margin-left: 1rem;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
 }
 
-.templePage { 
+#templePage { 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 } 
+
+#templePage h2 {
+  font-size: 32pt;
+}
