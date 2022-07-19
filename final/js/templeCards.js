@@ -1,5 +1,5 @@
 const requestURL = "https://siempreaprendiendo.github.io/wdd230/final/json/tmpls.json";
-const cards = document.querySelector('.temples');
+const cards = document.querySelector('.templeCards');
 
 async function getDirectory() {
 
@@ -15,36 +15,37 @@ async function getDirectory() {
 }
 
 function buildCards(data) {
-    data.members.forEach(member => {
-        let img = document.createElement('img');
+    data.temples.forEach(temple => {
         let card = document.createElement('section');
-        let name = document.createElement('h3');
-        let bname = document.createElement('h2')
+        let photo = document.createElement('img');
+        let name = document.createElement('h2');
         let address = document.createElement('p');
-        let phn = document.createElement('p');
-        let wbst = document.createElement('p');
-        let mblv = document.createElement('p');
+        let phnNumber = document.createElement('p');
+        let services = document.createElement('p');
+        let clsSchedule = document.createElement('ul');
+        let history = document.createElement('ul');
         
 
-        name.innerHTML = `${member.name} ${member.lastName}`;
-        bname.innerHTML = `<strong>${member.businessName}</storng>`;
-        address.innerHTML = `Adress: ${member.address}`;
-        phn.innerHTML = `Phone #: ${member.phone}`;
-        wbst.innerHTML = `${member.website}`;
-        mblv.innerHTML = `Member Level: <strong>${member.memLvl}<strong>`;
-        img.setAttribute('src', `images/${member.logo}`);
-        img.setAttribute('alt', `${member.businessName}`);
-        img.setAttribute('loading', 'lazy');
+        name.innerHTML = `${temple.name}`;
+        photo.setAttribute('src', `images/${temple.photo}`);
+        photo.setAttribute('alt', `${temple.name}`);
+        photo.setAttribute('loading', 'lazy');
+        address.innerHTML = `Adress: ${temple.address}`;
+        phnNumber.innerHTML = `Phone #: ${temple.phnNumber}`;
+        services.innerHTML = `${temple.services}`;
+        clsSchedule.innerHTML = `Member Level: ${temple.clsSchedule}`;
+        history.innerHTML = `Member Level: ${temple.history}`;
         
-        card.append(img);
-        card.append(bname);
+        
         card.append(name);
+        card.append(photo);
         card.append(address);
-        card.append(phn);
-        card.append(wbst);
-        card.append(mblv);
+        card.append(phnNumber);
+        card.append(services);
+        card.append(clsSchedule);
+        card.append(history);
         cards.append(card);
-        
+
     });
 }
 

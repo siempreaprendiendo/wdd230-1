@@ -291,3 +291,25 @@ figure {
     font-size: 1.5em;
   }
 
+/* ----------------------- Directory ---------------------- */
+
+.templeCards section {
+  border: 1px solid black;
+  background-color: white;
+  margin: 0.5rem;
+  padding: 1.5rem;
+}
+
+.templeCards {
+  min-width: 20px;
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.templePage { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
