@@ -444,13 +444,12 @@ form label.top input:required:valid {
 
 /* ----------------------- Directory ---------------------- */
 
-
-
 .members section {
   border: 1px solid black;
   background-color: white;
   margin: 0.5rem;
   padding: 1.5rem;
+  flex-basis: auto;
 }
 
 .members {
@@ -466,6 +465,7 @@ form label.top input:required:valid {
   flex-direction: row;
   flex-wrap: wrap;
 } 
+
 /* ------------- List View ------------ */
 
 .list section {

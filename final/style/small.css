@@ -20,7 +20,8 @@ h1, h2, h3 {
 }
 
 p {
-    padding: 1em;
+    padding: 0.5em;
+    margin: 0;
     font-family: 'Inter', sans-serif;
     color: #0e2207;
 }
@@ -291,29 +292,29 @@ figure {
     font-size: 1.5em;
   }
 
-/* ----------------------- Directory ---------------------- */
+/* ----------------------- Temple Page ---------------------- */
 
 .templeCards section {
   border: 1px solid black;
-  background-color: white;
+  background-color: #ffffff;
+  max-width: 400px;
   margin: 0.5rem;
   padding: 1.5rem;
 }
 
 .templeCards {
-  min-width: 20px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  text-align: center;
+  justify-content: center;
 }
-
-#templePage { 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} 
 
 #templePage h2 {
   font-size: 32pt;
+  flex-basis: 100%;
+}
+
+.templeCards img {
+  width: 300px;
+  box-shadow: 10px 10px #dadada;
 }

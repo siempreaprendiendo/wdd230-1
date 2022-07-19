@@ -18,23 +18,23 @@ function buildCards(data) {
     data.temples.forEach(temple => {
         let card = document.createElement('section');
         let photo = document.createElement('img');
-        let name = document.createElement('h2');
+        let name = document.createElement('h3');
         let address = document.createElement('p');
         let phnNumber = document.createElement('p');
         let services = document.createElement('p');
-        let clsSchedule = document.createElement('ul');
-        let history = document.createElement('ul');
+        let clsSchedule = document.createElement('p');
+        let history = document.createElement('p');
         
 
         name.innerHTML = `${temple.name}`;
         photo.setAttribute('src', `images/${temple.photo}`);
         photo.setAttribute('alt', `${temple.name}`);
         photo.setAttribute('loading', 'lazy');
-        address.innerHTML = `Adress: ${temple.address}`;
-        phnNumber.innerHTML = `Phone #: ${temple.phnNumber}`;
-        services.innerHTML = `${temple.services}`;
-        clsSchedule.innerHTML = `Member Level: ${temple.clsSchedule}`;
-        history.innerHTML = `Member Level: ${temple.history}`;
+        address.innerHTML = `<strong>Adress:</strong> ${temple.address}`;
+        phnNumber.innerHTML = `<strong>Phone #:</strong> ${temple.phnNumber}`;
+        services.innerHTML = `<strong>Closure Dates</strong>${temple.services}`;
+        clsSchedule.innerHTML = `<strong>Member Level:</strong> ${temple.clsSchedule}`;
+        history.innerHTML = `<strong>Member Level:</strong> ${temple.history}`;
         
         
         card.append(name);
