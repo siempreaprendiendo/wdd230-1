@@ -1,0 +1,50 @@
+{
+    "temples": [
+      {
+        "name": "Manti Utah Temple",
+        "address": "200 E 510 N, Manti UT 84642-1701, United States",
+        "phnNumber": "(435)835-2291",
+        "services": "Closed for Renovations",
+        "history": "25 June 1875-Announced, 25 April 1877-Groundbreaking, 21 May 1888-Dedicated, 14 June 1985-Rededicated",
+        "clsSchedule": "Closed for Renovations",
+        "photo": "mantiTemple.webp"
+      },
+      {
+        "name": "Seattle Washington Temple",
+        "address": "2808 148th Ave SE, Bellevue WA 98007-6453, United States",
+        "phnNumber": "425-643-5144",
+        "services": "Live Ordinances, Baptisms, Endowments, Sealings, Clothing rental available, Distribution center nearby",
+        "history": "15 November 1975-Announced, 27 May 1978-Groundbreaking, 17 November 1980-Dedicated",
+        "clsSchedule": "Monday, 8 August 2022 - Monday, 22 August 2022; Saturday, 1 October 2022; Wednesday, 23 November 2022 - Thursday, 24 November 2022; Saturday, 24 December 2022 - Sunday, 25 December 2022; Saturday, 31 December 2022 - Sunday, 1 January 2023",
+        "photo": "seattleTemple.webp"
+      },
+      {
+        "name": "Vernal Utah Temple",
+        "address": "420 W 200 S, Vernal UT 84078-2536, United States",
+        "phnNumber": " (435)789-3220",
+        "services": "Live Ordinances, Baptisms, Endowments, Sealings, Clothing rental available, Distribution center nearby",
+        "history": "13 February 1994-Announced, 13 May 1995-Groundbreaking, 2 November 1997-Dedicated",
+        "clsSchedule": "Monday, 19 September 2022 - Monday, 3 October 2022; Wednesday, 23 November 2022 - Thursday, 24 November 2022; Saturday, 24 December 2022; Saturday, 31 December 2022",
+        "photo": "vernalTemple.webp"
+      },
+      {
+        "name": "Guadalajara Mexico Temple",
+        "address": "Av. Patria #879, Fracc. Jardines Tepeyac, 45030 Zapopan, Jalisco, Mexico,",
+        "phnNumber": "(52) 33-3125-1283",
+        "services": "Live Ordinances, Baptisms, Endowments, Sealings, Distribution center nearby",
+        "history": "14 April 1999-Announced, 12 June 1999-Groundbreaking, 29 April 2001-Dedicated",
+        "clsSchedule": "Saturday, 1 October 2022 - Monday, 3 October 2022; Monday, 28 November 2022 - Monday, 12 December 2022; Saturday, 24 December 2022 - Monday, 26 December 2022; Saturday, 31 December 2022 - Monday, 2 January 2023",
+        "photo": "guadalajaraTemple.webp"
+      },
+      {
+        "name": "Salt Lake Temple",
+        "address": "50 W North Temple St, Salt Lake City UT 84150-9709, United States",
+        "phnNumber": "(801) 240-2640",
+        "services": "Closed for Renovations",
+        "history": "28 July 1847-Announced, 14 February 1853-Groundbreaking, 6 April 1893-Dedicated",
+        "clsSchedule": "Closed for Renovations",
+        "photo": "slcTemple.webp"
+      }
+
+    ]
+}

@@ -31,8 +31,9 @@ function displayResults(weatherData) {
     captionDesc.textContent = desc;
     // day1Temp.innerHTML = weatherData.daily
 
-
 }
+
+
 
 // Day of the week
 
