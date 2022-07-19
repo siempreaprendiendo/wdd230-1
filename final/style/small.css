@@ -318,3 +318,111 @@ figure {
   width: 300px;
   box-shadow: 10px 10px #dadada;
 }
+
+/* -----------Revervation Page------------ */
+
+#reservationPage h2 {
+  padding: 1em;
+}
+
+form {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 5px;
+  border-radius: 2%;
+  text-align: center;
+
+}
+
+form fieldset {
+margin: 1rem;
+border: 1px solid #0e2207;
+border-radius: 10px;
+padding: .5rem 2%;
+}
+
+form legend {
+color: #0e2207;
+margin: 0 1rem;
+padding: 0 .5rem;
+}
+
+form label.top, form div {
+display: block;
+padding-top: 1rem;
+color: #0e2207;
+}
+
+form label.top input, form label.top select, select {
+display: block;
+font-size: 1rem;
+border: solid 1px #999;
+border-radius: 4px;
+padding: .5rem;
+color: #555;
+width: 100%;
+max-width: 20rem;
+margin: auto;
+background-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"] {
+margin-right: 1em;
+}
+
+textarea {
+max-width: 90%;
+}
+
+form label.sbs {
+display: block;
+padding: 0.75rem 0;
+color: #555;
+}
+
+form input.submitBtn {
+border: none;
+background-color: #0e2207;
+color: white;
+border-radius: 1rem;
+padding: .75rem 1.5rem;
+margin: 0 0 2rem 2%;
+width: 96%;
+max-width: 20rem;
+}
+
+form label.top input:required {
+border: red solid 1px;
+}
+
+form label.top input:required:valid {
+border: green solid 1px;
+}
+
+.default {
+  color: red;
+}
+
+textarea, .date {
+  padding: 0.5em;
+}
+
+/* ------------- thankyou.html ------------------ */
+
+.thanks {
+text-align: center;
+padding: 2em;
+}
+
+.thanks h2 {
+font-family: 'Berkshire Swash', cursive;
+font-size: 46pt;
+}
+
+.thanks p {
+font-family: 'Inter', sans-serif;
+font-size: 18pt;
+line-height: 0;
+
+}

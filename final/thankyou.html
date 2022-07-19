@@ -37,37 +37,11 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>  
-    <main id="reservationPage">
-        <h2>Please fill out the form to make your reservation TODAY!</h2>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Visitor Infomation</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Home State or Country* <input type="text" name="home" required></label>
-                <label for="location" class="top">Pick the location you would like to visit:</label>
-                <select class="top" name="locationChoices" id="locations">
-                    <option selected="selected"><span class="default">Choose One</span></option>
-                    <option>Guadalajara Jalisco, Mexico</option>
-                    <option>Manti Utah</option>
-                    <option>Salt Lake City Utah</option>
-                    <option>Seattle Washington</option>
-                    <option>Vernal Utah</option>
-                </select>
-                <label class="top" for="visitDates">What dates will you be visiting?</label>  
-                    <label class="top" for="arrival">Arriving:</label>
-                    <input class="date" type="date" id="visitDate" name="Visiting">
-                    <label class="top" for="departure">Departing:</label>
-                    <input class="date" type="date" id="visitDate" name="Visiting">
-                    <label class="top"><p>Special Accommodations/Comments</p><textarea rows="4" cols="50" type="description" name="textarea" placeholder="Enter your text here..."></textarea></label>
-                
-            </fieldset>
-            
-            <input type="submit" value="Reserve Now" name="reservationButton" class="submitBtn">
-
-        </form>  
+    <main id="thankyou">
+        <div class="thanks">
+            <h2>Thank You!</h2>
+            <p>You will recieve a confirmation email soon.</p>
+        </div>
     </main>
     <footer>
         <img class="logo" src="images/logo.webp" alt="Logo">
