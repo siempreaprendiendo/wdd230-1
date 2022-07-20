@@ -110,7 +110,7 @@ footer img.logo {
     height: 60px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    padding-right: 2em;
+    margin-right: 2em;
   }
 
   .menuBtn-burger {
@@ -166,7 +166,7 @@ footer img.logo {
   nav ul{
     padding: 1em;
     list-style: none;
-    background-color: rgb(203, 223, 189, 0.75); 
+    background-color: #cbdfbd; 
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
   }
@@ -208,7 +208,7 @@ h2 {
 
         /* image hover caption */
 
-figure {
+#home figure {
   display: flex;
   padding: 2em;
   position: relative;
@@ -221,7 +221,7 @@ figure {
   .overlay {
     position: absolute; 
     bottom: 65px; 
-    background: rgb(203, 223, 189, 0.75) ;
+    background: rgba(203, 223, 189, 0.75) ;
     color: rgb(14, 34, 7); 
     width: 70%;
     transition: .5s ease;
@@ -256,7 +256,7 @@ figure {
     border: 1px solid black;
     padding: 1em;
     border-radius: 15pt;
-    background: rgba(203, 223, 189, 0.75);
+    background: #cbdfbd;
   }
 
       /* Weather */
@@ -317,13 +317,14 @@ figure {
 
 .templeCards img {
   width: 300px;
-  box-shadow: 10px 10px #dadada;
+  box-shadow: 10px 10px #cbdfbd;
 }
 
 /* -----------Revervation Page------------ */
 
-#reservationPage h2 {
-  padding: 1em;
+#reservationPage h2, #servicesPage h2 {
+  padding: 1em 0.5em 0.5em;
+  font-size: 20pt;
 }
 
 form {
@@ -423,5 +424,67 @@ font-size: 46pt;
 font-family: 'Inter', sans-serif;
 font-size: 18pt;
 line-height: 0;
+}
 
+/* -----------Services Page---------- */
+.lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em 1em;
+}
+
+.lists ul li:nth-child(1) {
+  list-style: none;
+  padding: 0.75em;
+  font-size: larger;
+}
+
+.lists ul {
+  padding: 0.5em;
+}
+
+#subPages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subPage {
+  position: relative;
+  margin: 2em;
+}
+
+.subPage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fullOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(203, 223, 189, 0.5);
+}
+
+.text {
+  color: #0e2207;
+  font-size: 80%;
+  position: absolute;
+  padding: 1em;
+  bottom: 0;
+  text-align: center;
+}
+
+.subPage:hover .fullOverlay {
+  opacity: 1;
 }
