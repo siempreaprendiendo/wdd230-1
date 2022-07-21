@@ -35,13 +35,33 @@ function displayResults(weatherData) {
 
 
 
-// Day of the week
+// Today
 
-const todaysDate = document.querySelector(".today");
-// const nextDay = document.querySelector(".day")
-
+const todaysDate = document.querySelector('.today');
 const todayName = new Date().toLocaleString('default', {weekday: 'long'});
-
-
 todaysDate.innerHTML = `<em>${todayName}</em>`;
+
+// 3 day forcast
+
+const days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"]
+const dayOne = document.querySelector('.day1');
+const dayTwo = document.querySelector('.day2');
+const dayThree = document.querySelector('.day3');
+
+let a = new Date().getDay()+1;
+let b = new Date().getDay()+2;
+let c = new Date().getDay()+3;
+
+dayOne.innerHTML = days[a];
+dayTwo.innerHTML = days[b];
+dayThree.innerHTML = days[c];
+
+
+
+
+
+
+
+
+
 
