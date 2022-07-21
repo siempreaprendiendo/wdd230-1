@@ -261,7 +261,7 @@ h2 {
 
       /* Weather */
 
-  #currWeather, #threeDayForcast {
+  #currWeather, #threeDayForcast, .fcBlock {
    display: flex;
    flex-direction: column; 
    justify-content: center;
