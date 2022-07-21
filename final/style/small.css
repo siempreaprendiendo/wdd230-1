@@ -274,13 +274,18 @@ h2 {
    padding: 0.5em;
   }
 
-  .fcBlock {    
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 1em;
+  .fcBlock { 
     margin: 0.5em;
     width: 100%;
     height: auto;
+  }
+
+  #weather-icon {
+    width: 10em;
+  }
+
+  #w-icon1, #w-icon2, #w-icon3 {
+    width: 5em;
   }
 
   #currWeather figure {
